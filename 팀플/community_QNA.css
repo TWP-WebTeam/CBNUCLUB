@@ -1,0 +1,198 @@
+html {
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.gnb {
+    /* float: right; */
+    position: fixed;
+    right: 8px;
+    top: 6px;
+    z-index: 3;
+}
+
+.Logo {
+    position: fixed;
+    /* float: left; */
+    text-align: left;
+    z-index: 3;
+}
+
+#img-logo {
+    width: 110px;
+    height: 40px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+#signin, #signup {
+    border: 1px solid rgb(122, 165, 210);
+    text-decoration: none;
+    color: rgb(122, 165, 210);
+    background-color: white;
+    padding: 2px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+nav li {
+    position:relative;
+    display:block;
+    opacity:0;
+    cursor:pointer;
+ }
+
+ nav li > menu {
+    position: absolute;
+    pointer-events:none;
+ }
+ nav > menu { display:flex; }
+
+ nav > menu > li { pointer-events: all; opacity:1; }
+ menu li a { white-space:nowrap; display:block; }
+
+ li:hover > menu {
+    pointer-events:initial;
+ }
+ li:hover > menu > li,
+ menu:hover > li{
+    opacity:1;
+ }
+ nav > menu > li li menu {
+    transform:translateX(100%);
+    top:0; right:0;
+ }
+
+ nav {
+    margin-top: 0px;
+    margin-left: 0px;
+ }
+
+ nav a {
+    background:rgb(122, 165, 210);
+    color:#FFF;
+    min-width:190px;
+    transition: background 0.5s, color 0.5s, transform 0.5s;
+    margin:0px 0px 0px 0px;
+    padding: 5px 80px;
+    box-sizing:border-box;
+    border-radius:3px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    position:relative;
+ }
+
+ nav a:hover:before {
+    content: '';
+    top:0;left:0;
+    position:absolute;
+    background:rgba(0, 0, 0, 0.2);
+    width:100%;
+    height:100%;
+ }
+
+ .menu-bar {
+    text-align: center;
+    height: 40px;
+    background-color:white;
+    background-color: rgb(122, 165, 210);
+    color: white;
+    border-radius: 5px 5px 5px 5px;
+    position: relative;
+    z-index: 2;
+}
+
+.main-menu {
+    margin: 0%;
+    list-style: none;
+    display: inline-flex;
+    text-align: center;
+}
+
+.sub-menu {
+    text-align: center;
+    height: 50px;
+    padding-top: 1%;
+}
+
+.sub-menu2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.sub-menu2 > li {
+    margin: 5px 0px;
+}
+
+.sub-menu ul {
+    list-style: none;
+    visibility: hidden;
+    text-align: center;
+    padding: 0px;
+}
+
+.main-menu > li:hover .sub-menu2 {
+    list-style: none;
+    visibility: visible;
+    background-color: none;
+}
+
+.sub-menu:hover li{
+    transition: .4s ease-in-out;
+    transform: translateY(-150%);
+}
+
+.sub-menu > ul > li {
+    width: 200px;
+    overflow: hidden;
+}
+
+
+a{
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+
+
+a.sub-list:link{
+    text-decoration: none;
+    color: rgb(122, 165, 210);
+}
+
+a.sub-list:visited{
+    text-decoration: none;
+    color: rgb(122, 165, 210);
+}
+
+.title{
+  text-align: center;
+  margin: 100px;
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+.top{
+  text-align: center;
+  margin: 100px;
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+.bottom{
+  text-align: center;
+  margin: 100px;
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+#write{
+  margin-left: 850px;
+  margin-bottom: 50px;
+  background-color: black;
+  border-radius: 5px 5px 5px 5px;
+  color: white;
+  border : 1px solid black;
+  padding: 5px;
+}
+.middle{
+  margin-left:200px;
+  margin-right: 200px;
+  font-family: 'Do Hyeon', sans-serif;
+}
+.subtitle{
+    color: rgb(164,164,164);
+    margin: 50px;
+}
