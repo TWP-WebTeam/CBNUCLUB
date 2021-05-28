@@ -1,0 +1,193 @@
+body {
+    font-family: 'Do Hyeon', sans-serif !important;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom, rgba(190, 255, 168, 0.5), rgba(26, 114, 255, 0.5));
+    background-repeat: no-repeat;
+}
+
+.header {
+    position: fixed;
+    top: 3px;
+    z-index: 3;
+   
+}
+
+.Logo {
+    position: fixed;
+    top: 6px;
+    left: 10px;
+    text-align: center;
+    z-index: 3;
+}
+
+#img-logo {
+    width: 110px;
+    height: 40px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.gnb {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    text-align: right;
+    z-index: 3;
+    padding-top: 8px;
+}
+
+#signin, #signup {
+    text-decoration: none;
+    color: black;
+    padding-left: 2px;
+    padding-right: 2px;
+    top: 10px;
+    right: 10px;
+}
+
+.menu-bar {
+    text-align: center;
+    position: fixed;
+    top: 10px;
+    right: 0px;
+    left: 0px;
+    height: 40px;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.main-menu {
+    margin: 0%;
+    list-style: none;
+    display: inline-flex;
+    text-align: center;
+}
+
+
+.sub-menu {
+    /* text-align: center;
+    width: 30%;
+    height: 50px; */
+    text-align: center;
+    height: 50px;
+    padding-top: 1%;
+}
+
+.sub-menu2 {
+    text-align: center;
+    margin-top: 50px;
+    /* padding-top: 100px; */
+    
+}
+
+.sub-menu2 > li {
+    padding: 3px;
+}
+
+.sub-menu ul {
+    list-style: none;
+    visibility: hidden;
+    text-align: center;
+    padding: 0px;
+}
+
+.main-menu > li:hover .sub-menu2 {
+    list-style: none;
+    visibility: visible;
+    /* padding-left: 10.5%; */
+}
+
+.sub-menu:hover li{
+    transition: .4s ease-in-out;
+    transform: translateY(-150%);
+}
+
+.sub-menu > ul > li {
+    width: 200px;
+    overflow: hidden;
+}
+
+a.sub-list:link{
+    text-decoration: none;
+    color: black;
+}
+
+a.sub-list:visited{
+    text-decoration: none;
+    color: black;
+}
+
+#indicator
+{
+    position: fixed;
+    left: 29.5%;
+    top: 42px;
+    width: 30px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    transition: 0.2s ease left;
+}
+
+.main-menu li:nth-of-type(1):hover ~ #indicator
+{
+    background: linear-gradient(130deg, yellow, red);
+}
+
+.main-menu li:nth-of-type(2):hover ~ #indicator
+{
+    left: 41.6%;
+    background: linear-gradient(130deg, #e4f523, #1af1a2);
+}
+
+.main-menu li:nth-child(3):hover ~ #indicator
+{
+    left: 56%;
+    background: linear-gradient(130deg,rgb(16, 234, 136), rgb(25, 104, 230));
+}
+
+.main-menu li:nth-child(4):hover ~ #indicator
+{
+    left: 68.4%;
+    background: linear-gradient(130deg,palevioletred, purple);
+}
+
+.content{
+    text-align: left;
+    padding-top: 100px;
+    padding-left: 30px;
+}
+
+.community-list {
+    background-color: white;
+    width: 160px;
+    height: 300px;
+    border-radius: 5px 5px;
+    box-shadow: 0 0 10px rgb(133, 133, 133);
+}
+
+.club-list{
+    list-style: none;
+    margin-left: 8px;
+    padding-top: 18px;
+    list-style-image: url('../img/icon.png');
+    font-size: 17px;
+}
+
+.list {
+    text-decoration: none;
+    color: black;
+}
+
+.list:hover {
+    transform: translateX(-150%);
+    /* font-size: 20px; */
+    color: black;
+}
+
+.club-list li {
+    padding-bottom: 6px;
+    
+}

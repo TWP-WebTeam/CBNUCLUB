@@ -1,0 +1,259 @@
+body {
+    font-family: 'Do Hyeon', sans-serif !important;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom, rgba(190, 255, 168, 0.5), rgba(26, 114, 255, 0.5));
+}
+
+.header {
+    position: fixed;
+    top: 3px;
+    z-index: 3;
+}
+
+.Logo {
+    position: fixed;
+    top: 6px;
+    left: 10px;
+    text-align: center;
+    z-index: 3;
+}
+
+#img-logo {
+    width: 110px;
+    height: 40px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.gnb {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    text-align: right;
+    z-index: 3;
+    padding-top: 8px;
+}
+
+#signin, #signup {
+    text-decoration: none;
+    color: black;
+    padding-left: 2px;
+    padding-right: 2px;
+    top: 10px;
+    right: 10px;
+}
+
+.menu-bar {
+    text-align: center;
+    position: fixed;
+    top: 10px;
+    right: 0px;
+    left: 0px;
+    height: 40px;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.main-menu {
+    margin: 0%;
+    list-style: none;
+    display: inline-flex;
+    text-align: center;
+}
+
+.sub-menu {
+    text-align: center;
+    height: 50px;
+    padding-top: 1%;
+}
+
+.sub-menu2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.sub-menu2 > li {
+    padding: 3px;
+}
+
+.sub-menu ul {
+    list-style: none;
+    visibility: hidden;
+    text-align: center;
+    padding: 0px;
+}
+
+.main-menu > li:hover .sub-menu2 {
+    list-style: none;
+    visibility: visible;
+    background-color: none;
+}
+
+.sub-menu:hover li{
+    transition: .4s ease-in-out;
+    transform: translateY(-150%);
+}
+
+.sub-menu > ul > li {
+    width: 200px;
+    overflow: hidden;
+}
+
+a.sub-list:link{
+    text-decoration: none;
+    color: black;
+}
+
+a.sub-list:visited{
+    text-decoration: none;
+    color: black;
+}
+
+#login-form,
+#signup-form {
+    position: fixed;
+    display: inline-block;
+    text-align: center;
+    z-index: 1;
+    width: 400px;
+    margin-top: 10%;
+    margin-left:35%;
+}
+
+form {
+    width: 400px;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+    background: #ffffff;
+}
+
+.form__message {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form__message--success {
+    color: var(--color-success);
+}
+
+.form__message--error {
+    color: var(--color-error);
+}
+
+.form__input-group {
+    margin-bottom: 1rem;
+}
+
+.form__input {
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    border: 1px solid #dddddd;
+    outline: none;
+    background: #eeeeee;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.form__input:focus {
+    border-color: var(--color-primary);
+    background: #ffffff;
+}
+
+.form__input--error {
+    color: var(--color-error);
+    border-color: var(--color-error);
+}
+
+.form__input-error-message {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--color-error);
+}
+
+.form__button {
+    width: 100%;
+    padding: 0.6rem 1rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: rgb(122, 165, 210);
+}
+
+.form__button:hover {
+    background: rgb(97, 141, 189);
+}
+
+.form__button:active {
+    transform: scale(0.98);
+}
+
+.form__text {
+    text-align: center;
+}
+
+.form__link {
+    color: var(--color-secondary);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form__link:hover {
+    text-decoration: underline;
+}
+
+select {
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: .5em;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+}
+
+select:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #222;
+    outline: none;
+}
+
+#indicator
+{
+    position: fixed;
+    left: 29%;
+    top: 42px;
+    width: 30px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    transition: 0.2s ease left;
+}
+
+.main-menu li:nth-of-type(1):hover ~ #indicator
+{
+    background: linear-gradient(130deg, yellow, red);
+}
+
+.main-menu li:nth-of-type(2):hover ~ #indicator
+{
+    left: 41.6%;
+    background: linear-gradient(130deg, #e4f523, #1af1a2);
+}
+
+.main-menu li:nth-child(3):hover ~ #indicator
+{
+    left: 56.4%;
+    background: linear-gradient(130deg,rgb(16, 234, 136), rgb(25, 104, 230));
+}
+
+.main-menu li:nth-child(4):hover ~ #indicator
+{
+    left: 69.3%;
+    background: linear-gradient(130deg,palevioletred, purple);
+}
