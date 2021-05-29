@@ -130,7 +130,19 @@
 			<div class="block rounded-full shadow-xl mx-auto h-48 w-48 bg-cover bg-center"
                 style="background-image: url('../img/flo.jpg')"></div>
 			
-			<h1 class="text-3xl font-bold pt-8 lg:pt-0">이름</h1>
+			<h1 class="text-3xl font-bold pt-8 lg:pt-0">
+                <?php
+                    $conn = mysqli_connect(
+                        'localhost:3307',
+                        'root',
+                        'young2360',
+                        'cbnuclub');
+                        $sql = "SELECT * FROM memberdb WHERE id = 2";
+                        $result = mysqli_query($conn, $sql);
+                        $row = mysqli_fetch_array($result);
+                        echo '<h1>'.$row['stdnum'].'</h1>';
+
+            echo '</h1>
 			<div class="mx-auto w-3/5 pt-3 border-b-2 border-blue-500 opacity-25"></div>
 			<p class="pt-4 text-base font-bold flex items-center justify-center ">
                 학과 / 학년</p>
@@ -142,7 +154,11 @@
 				</button> 
 			</div>
             <div id="clist" style="position: relative;">
-                <p class="pt-8 text-sm">가입된 동아리</p>
+                <p class="pt-8 text-sm">'.$row['email'].'</p>
+                <div>';
+
+                    ?>
+                </div>
             </div>
 		</div>
 	</div>

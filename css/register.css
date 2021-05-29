@@ -1,24 +1,19 @@
 body {
     font-family: 'Do Hyeon', sans-serif !important;
-    height: 100vh;
-    width: 100%;
-    margin: 0;
-    padding: 0;
     background-image: linear-gradient(to bottom, rgba(190, 255, 168, 0.5), rgba(26, 114, 255, 0.5));
     background-repeat: no-repeat;
-  }
+    background-attachment: fixed;
+}
 
 .header {
     position: fixed;
     top: 3px;
     z-index: 3;
-   
 }
 
 .Logo {
     position: fixed;
-    top: 6px;
-    left: 10px;
+    top: 5px;
     text-align: center;
     z-index: 3;
 }
@@ -32,7 +27,7 @@ body {
 .gnb {
     position: fixed;
     top: 10px;
-    right: 10px;
+    right: 14.2%;
     text-align: right;
     z-index: 3;
     padding-top: 8px;
@@ -41,10 +36,8 @@ body {
 #signin, #signup {
     text-decoration: none;
     color: black;
-    padding-left: 2px;
-    padding-right: 2px;
-    top: 10px;
-    right: 10px;
+    padding-left: 15px;
+    font-size: 15px;
 }
 
 .menu-bar {
@@ -52,7 +45,7 @@ body {
     position: fixed;
     top: 10px;
     right: 0px;
-    left: 0px;
+    left: -5px;
     height: 40px;
     z-index: 2;
     background-color: rgba(255, 255, 255, 0.6);
@@ -67,19 +60,15 @@ body {
 
 
 .sub-menu {
-    /* text-align: center;
-    width: 30%;
-    height: 50px; */
     text-align: center;
-    height: 50px;
+    width: 200px;
+    height: 40px;
     padding-top: 1%;
 }
 
 .sub-menu2 {
     text-align: center;
     margin-top: 50px;
-    /* padding-top: 100px; */
-    
 }
 
 .sub-menu2 > li {
@@ -96,7 +85,6 @@ body {
 .main-menu > li:hover .sub-menu2 {
     list-style: none;
     visibility: visible;
-    /* padding-left: 10.5%; */
 }
 
 .sub-menu:hover li{
@@ -119,18 +107,9 @@ a.sub-list:visited{
     color: black;
 }
 
-section {
-    position: absolute;
-    top: 100px;
-    left: 520px;
-    right: 200px;
-    z-index: 1;
-}
-
-#indicator
-{
+#indicator {
     position: fixed;
-    left: 29.5%;
+    left: 29.2%;
     top: 42px;
     width: 30px;
     height: 3px;
@@ -162,12 +141,19 @@ section {
     background: linear-gradient(130deg,palevioletred, purple);
 }
 
+section {
+    position: absolute;
+    top: 80px;
+    left: 480px;
+    right: 200px;
+    z-index: 1;
+}
+
 form {
-    width: 500px;
-    height: 500px;
-    padding-left: 125px;
+    width: 550px;
+    height: 610px;
+    padding-left: 140px;
     padding-top: 20px;
     background-color: white;
-    border-radius: 5px 5px;
-    box-shadow: 0 0 10px rgb(68, 68, 68);
+    box-shadow: 0 0 10px rgb(138, 138, 138);
 }

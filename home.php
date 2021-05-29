@@ -17,7 +17,7 @@
     <body>
         <div class="header">
             <div class="Logo">
-                <a href="./home.html"
+                <a href="home.php"
                     style="text-decoration: none; font-size: 20px; color: black; position: fixed; left: 13.2%; padding-top: 10px;">
                     CBNUCLUB</a>
             </div>
@@ -58,7 +58,7 @@
                         <a href="" style="text-decoration: none; color: black;">동아리 신청하기</a>
                         <ul class="sub-menu2">
                             <li>
-                                <a href="./register.html" class="sub-list">등록하기</a>
+                                <a href="register.php" class="sub-list">등록하기</a>
                             </li>
                             <li>
                                 <a href="./club_status.html" class="sub-list">신청하기</a>
@@ -111,8 +111,25 @@
                     <span></span>
                 </span>
                 <div class="gnb">
-                    <a href="signin.html" id="signin" onclick="Login()">로그인</a>
-                    <a href="signup.html" id="signup" onclick="Signup()">회원가입</a>
+                    
+<?php
+session_start();
+$username="";
+if( isset($_SESSION['stdnum'])) $username= $_SESSION['stdnum'];
+  if($username){
+?>
+<li><a href="signin.php">로그인</a></li>
+<li><a href="signup.php">회원가입</a></li>
+<?php
+  }else{
+?>
+<li><a href="logout.php">로그아웃</a></li>
+<li><a href="#">마이페이지</a></li>
+<?php
+  }
+?>
+                    <!-- <a href="signin.php" id="signin" onclick="Login()">로그인</a>
+                    <a href="signup.php" id="signup" onclick="Signup()">회원가입</a> -->
                 </div>
             </div>
         </div>

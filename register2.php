@@ -119,7 +119,7 @@
 
         <section id="article">
             <div class="form">
-                <form class="form-horizontal" action="../register.php" method="POST">
+                <form class="form-horizontal" action="register.php" method="POST">
                     <h4 class="bold title" style="padding-left: 57px;">📌동아리 등록하기</h4>
                     <div class="form-group">
                       <label class="control-label col-sm-4">동아리명 :</label>
@@ -145,13 +145,13 @@
                     <div class="form-group">
                         <label for="">동아리 소개 :</label><br>
                         <div class="col-sm-8">
-                            <textarea name="" id="" cols="35" rows="10" style="resize: none;"></textarea><br>
+                            <textarea name="desc" id="" cols="35" rows="10" style="resize: none;"></textarea><br>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="">동아리방 위치 :</label>
                         <div class="col-sm-8">
-                            <input type="text" placeholder="ex) S4-1 / 106호"><br>
+                            <input type="text" name="location" placeholder="ex) S4-1 / 106호"><br>
                         </div>
                     </div>
                     <div class="form-group">

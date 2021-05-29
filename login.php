@@ -1,4 +1,4 @@
-<?php
+<?php //SELECT 정보가져오기
     include "./include/session.php";
     include "./include/dbConnect.php";
     /*echo "<pre>";
@@ -7,18 +7,24 @@
     $memberPw = $_POST['memberPW'];
 
 
-    $sql = "SELECT * FROM ctm WHERE stdnum = '{$memberId}' AND pw = '{$memberPw}'";
+    $sql = "SELECT * FROM memberdb WHERE stdnum = '{$memberId}' AND pw = '{$memberPW}'";
     $res = $dbConnect->query($sql);
 
         $row = $res->fetch_array(MYSQLI_BOTH);
-
         if ($row != null) {
             $_SESSION['stdnum'] = $row['memberID'];
-            // header ('Location: ../html/home.html');
+            header ('Location: home.php');
         }
 
         if($row == null){
-            echo '로그인 실패 아이디와 비밀번호가 일치하지 않습니다.';
+            echo "
+            <script>
+                alert('아이디와 비밀번호를 확인하세요.');
+                history.back();
+            </script>
+            ";
+            exit;
+            // echo '로그인 실패 아이디와 비밀번호가 일치하지 않습니다.';
         }
 ?>
 <!-- $_SESSION['stdnum'].'님 안녕하세요'; -->
