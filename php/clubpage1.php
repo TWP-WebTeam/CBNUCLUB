@@ -253,6 +253,5 @@
                 marker.setMap(map);
             }
         </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDG_htb8KLimgQvNbngBjYHL-Pv0vZQnUo&callback=myMap"></script>
     </body>
 </html>
