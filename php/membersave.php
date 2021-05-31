@@ -30,6 +30,5 @@ $mysqli = new mysqli($host, $user, $pw, $dbName);
 
 mysqli_close($mysqli);
 
-
 ?>
 </html>
