@@ -1,6 +1,6 @@
   <?php
  include "./include/session.php";
- 
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +12,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
         <title>CBNU CLUB</title>
-        <script src="../js/home.js"></script> 
+        <script src="../js/home.js"></script>
         <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
@@ -78,16 +78,16 @@
 
                         <ul class="sub-menu2">
                             <li>
-                                <a href="" class="sub-list">공지사항</a>
+                                <a href="community_NOTI.php" class="sub-list">공지사항</a>
                             </li>
                             <li>
-                                <a href="" class="sub-list">자유게시판</a>
+                                <a href="community_FREE.php" class="sub-list">자유게시판</a>
                             </li>
                             <li>
-                                <a href="" class="sub-list">QnA</a>
+                                <a href="community_QNA.php" class="sub-list">QnA</a>
                             </li>
                             <li>
-                                <a href="" class="sub-list">FAQ</a>
+                                <a href="community_FAQ.php" class="sub-list">FAQ</a>
                             </li>
                         </ul>
                     </li>
@@ -210,7 +210,7 @@
                     <li><a href="" class="list-group-item"><div class="article-title">제목</div><div class="created_at">게시날짜</div></a></li>
                 </ul>
             </div>
-            <div class="" 
+            <div class=""
                 style="position: absolute; top: 0px; left: 759px; background-color: white; width: 365px; height: 330px; border-radius: 3px; border: 1px solid rgb(119, 119, 119);">
                 <h5 style="padding: 7px; padding-bottom: 0px;">📌자유게시판</h5>
                 <hr style="position: relative; width: 350px; left: 2px; margin: 1%;">
@@ -222,7 +222,7 @@
                     <li><a href="" class="list-group-item"><div class="article-title">제목</div><div class="created_at">게시날짜</div></a></li>
                 </ul>
             </div>
-            
+
         </section>
 
 
