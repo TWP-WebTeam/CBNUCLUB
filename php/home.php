@@ -48,28 +48,25 @@
                             동아리 현황</a>
                         <ul class="sub-menu2">
                             <li>
-                                <a href="./club_status1.php" class="sub-list" style="padding-top: 10px;">중앙동아리</a>
+                                <a href="../html/club_status.html" class="sub-list" style="padding-top: 10px;">중앙동아리</a>
                             </li>
                             <li >
-                                <a href="" class="sub-list">전자정보대학</a>
+                                <a href="../html/clubpage1.html" class="sub-list">전자정보대학</a>
                             </li>
                             <li>
-                                <a href="" class="sub-list">공과대학</a>
+                                <a href="../html/clubpage2.html" class="sub-list">공과대학</a>
                             </li>
                             <li>
-                                <a href="" class="sub-list">생활과학대학</a>
+                                <a href="../html/clubpage3.html" class="sub-list">생활과학대학</a>
                             </li>
                             <li>
-                                <a href="" class="sub-list">수의과대학</a>
+                                <a href="../html/clubpage4.html" class="sub-list">수의과대학</a>
                             </li>
                             <li>
-                                <a href="" class="sub-list">약학대학</a>
+                                <a href="../html/clubpage5.html" class="sub-list">약학대학</a>
                             </li>
                             <li>
-                                <a href="" class="sub-list">의과대학</a>
-                            </li>
-                            <li>
-                                <a href="" class="sub-list">사범대학</a>
+                                <a href="../html/clubpage6.html" class="sub-list">의과대학</a>
                             </li>
                         </ul>
                     </li>
