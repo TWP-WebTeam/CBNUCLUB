@@ -9,9 +9,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/home.css">
+        <link rel="stylesheet" href="../css/chart.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
         <title>CBNU CLUB</title>
+        <script src="../js/map.js"></script>
+        <script src="../js/chart.js"></script>
         <script src="../js/home.js"></script>
         <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
@@ -222,8 +225,14 @@
                     <li><a href="" class="list-group-item"><div class="article-title">제목</div><div class="created_at">게시날짜</div></a></li>
                 </ul>
             </div>
-
-        </section>
+            <div  style=" position: absolute; left: 0px; margin-top: 10px;">
+            <div style="width:500px; height: 300px;"  id="map" ></div>
+            </div>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCxi-l8-EWXOu-L6tD9lpDQTdysFKcIJA&callback=myMap"></script>
+                <div  style=" position: absolute; left: 700px; margin-top: 10px;">
+                <div id = "chart_div"></div>
+                </div>
+            </section>
 
 
         <!-- 구글 맵 넣기 !! -->

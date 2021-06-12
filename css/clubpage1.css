@@ -277,3 +277,37 @@ body {
   .heart{
       width: 20px;
   }
+
+  #dp1{
+    position : fixed;   
+    top: 300px;
+    right: 80px;
+    font-style: bold;
+    font-size:17px;
+    border-radius: 5px 5px;
+    background-color: white;
+    width: 170px;
+    border-radius: 5px 5px;
+    box-shadow: 0 0 10px rgb(133, 133, 133);
+  }
+
+  #dp1 ul{
+    list-style: none;
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    padding-right: 30px;    
+  }
+
+  #dp1 ul li{
+    /* padding-bottom: 10px; */
+    text-align: center;
+  }
+
+  #dp1 ul li a{
+      text-decoration: none;
+      /* padding-bottom: 100px;
+      color :black; */
+      text-align: left;
+      padding: 0px;
+  }
