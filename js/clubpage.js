@@ -1,21 +1,30 @@
+
 function Change_img(num){
-    var img1 = document.getElementById("img"+num);
-    var content = document.getElementById("promo"+num).innerHTML;
-    var content2 = document.getElementById("pro"+num);
+  var img1 = document.getElementById("img"+num);
+  var content = document.getElementById("promo"+num).innerHTML;
+  var content2 = document.getElementById("pro"+num);
+  var content3 = document.getElementById("content");
 
-    if(img1.getAttribute('src') == "../img/central/img"+num+".jpg"){
-        img1.setAttribute("src", "../img/central/imgw.PNG");
-        content2.innerHTML = content;
-        content2.style.backgroundColor = "white";
-        content2.style.opacity = "1";
-    }
-    else {
-        img1.setAttribute("src", "../img/central/img"+num+".jpg");
-        content2.innerHTML = "Click하면 동아리 소개를 볼 수 있어요!";
-        content2.style.opacity = "0.4";
-    }
-
-
+  if(img1.getAttribute('src') == "../img/central/img"+num+".jpg" || img1.getAttribute('src') == "../img/noimg.jpg"){
+      img1.setAttribute("src", "../img/img_change/imgw.PNG");
+      img1.setAttribute("width", "50");
+      img1.setAttribute("height", "80");
+      content2.innerHTML = content;
+      content2.style.width = "500px";
+      content2.style.opacity = "1";
+      content3.style.height = "500px";
+      content2.style.paddingTop = "0px";
+  }
+  else {
+      img1.setAttribute("src", "../img/central/img"+num+".jpg");
+      content2.innerHTML = "Click하면 동아리 소개를 볼 수 있어요!";
+      content2.style.width = "350px";
+      img1.setAttribute("width", "350");
+      img1.setAttribute("height", "250");
+      content2.style.opacity = "0.4";
+      content3.style.height = "500px";
+      content2.style.paddingTop = "130px";
+  }
 
 }
 
@@ -40,7 +49,7 @@ function submit(){
 function changeheart(n)
     {
 
-      for(var i =0;i<8;i++)
+      for(var i =0;i<10;i++)
       {
         if(n=="heart"+i)
         {
