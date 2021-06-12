@@ -161,7 +161,7 @@ body {
   .community-list {
       background-color: white;
       width: 160px;
-      height: 300px;
+      height: 240px;
       border-radius: 5px 5px;
       box-shadow: 0 0 10px rgb(133, 133, 133);
       float:left;
@@ -190,7 +190,6 @@ body {
       padding-bottom: 6px;
   
   }
-  
   
   .community-content{
     margin-left: 300px;
@@ -223,7 +222,6 @@ body {
   .promotion{
     margin:10px 80px 0px 80px;
     font-size :17px;
-  
   }
   
   .join{
@@ -234,7 +232,6 @@ body {
     border: none;
     background-color: skyblue;
   }
-  
   
   #dp  {
     position : fixed;   
@@ -277,3 +274,104 @@ body {
   .heart{
       width: 20px;
   }
+
+  #pro1 {
+    position: absolute;
+    top: 267px;
+    left: 430px;
+    width: 270px;
+    height: 150px;
+    text-align: center;
+    padding-top: 70px;
+    background-color: white;
+    opacity: 0.4;
+}
+#pro2 {
+    position: absolute;
+    top: 600px;
+    left: 430px;
+    width: 270px;
+    height: 150px;
+    text-align: center;
+    padding-top: 70px;
+    background-color: white;
+    opacity: 0.4;
+}
+#pro3 {
+    position: absolute;
+    top: 933px;
+    left: 430px;
+    width: 270px;
+    height: 150px;
+    text-align: center;
+    padding-top: 70px;
+    background-color: white;
+    opacity: 0.4;
+}
+#pro4 {
+    position: absolute;
+    top: 1266px;
+    left: 430px;
+    width: 270px;
+    height: 150px;
+    text-align: center;
+    padding-top: 70px;
+    background-color: white;
+    opacity: 0.4;
+}
+#pro5 {
+    position: absolute;
+    top: 1600px;
+    left: 430px;
+    width: 270px;
+    height: 150px;
+    text-align: center;
+    padding-top: 70px;
+    background-color: white;
+    opacity: 0.4;
+}
+#pro6 {
+    position: absolute;
+    top: 1930px;
+    left: 430px;
+    width: 270px;
+    height: 150px;
+    text-align: center;
+    padding-top: 70px;
+    background-color: white;
+    opacity: 0.4;
+}
+#pro7 {
+    position: absolute;
+    top: 2265px;
+    left: 430px;
+    width: 270px;
+    height: 150px;
+    text-align: center;
+    padding-top: 70px;
+    background-color: white;
+    opacity: 0.4;
+}
+#pro8 {
+    position: absolute;
+    top: 2597px;
+    left: 430px;
+    width: 270px;
+    height: 150px;
+    text-align: center;
+    padding-top: 70px;
+    background-color: white;
+    opacity: 0.4;
+}
+
+.promotion{
+    visibility: hidden;
+}
+
+#content{
+    height: 300px;
+}
+
+#p {
+    color: black;
+}
