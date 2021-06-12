@@ -3,10 +3,10 @@
    <meta charset="utf-8">
 <?php
 
-$host = 'localhost:3307';
-$user = 'root';
-$pw = 'young2360';
-$dbName = 'cbnuclub';
+$host = 'localhost';
+    $user = 'root';
+    $passWord = 'qwer1234!';
+    $dbName = 'clubdb';
 
 $mysqli = new mysqli($host, $user, $pw, $dbName);
 

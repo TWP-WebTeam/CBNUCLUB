@@ -13,14 +13,14 @@
   <!-- <script src="../js/profile.js"></script>  -->
   <link rel="stylesheet" href="../css/profile.css">
   <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css"> 
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css">
 </head>
 
 <body style="background-image: linear-gradient(to bottom, rgba(190, 255, 168, 0.5), rgba(26, 114, 255, 0.5));">
 
     <div class="header">
         <div class="Logo">
-            <a href="./home.html"
+            <a href="../php/home.php"
                 style="text-decoration: none; font-size: 20px; color: black; position: fixed; left: 13%; padding-top: 10px;">
                 CBNUCLUB</a>
         </div>
@@ -73,20 +73,20 @@
                 </li>
 
                 <li class="sub-menu">
-                    <a href="" style="text-decoration: none; color: black;">커뮤니티</a>
+                    <a href="../php/community_NOTI.php" style="text-decoration: none; color: black;">커뮤니티</a>
 
                     <ul class="sub-menu2">
                         <li>
-                            <a href="" class="sub-list">공지사항</a>
+                            <a href="../php/community_NOTI.php" class="sub-list">공지사항</a>
                         </li>
                         <li>
-                            <a href="" class="sub-list">자유게시판</a>
+                            <a href="../php/community_FREE.php" class="sub-list">자유게시판</a>
                         </li>
                         <li>
-                            <a href="" class="sub-list">QnA</a>
+                            <a href="../php/community_QNA.php" class="sub-list">QnA</a>
                         </li>
                         <li>
-                            <a href="" class="sub-list">FAQ</a>
+                            <a href="../php/community_FAQ.php" class="sub-list">FAQ</a>
                         </li>
                     </ul>
                 </li>
@@ -124,12 +124,12 @@
   <div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
 
 	<div id="profile" class="w-full rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0">
-	
+
 		<div class="p-4 md:p-12 text-center">
 
 			<div class="block rounded-full shadow-xl mx-auto h-48 w-48 bg-cover bg-center"
                 style="background-image: url('../img/flo.jpg')"></div>
-			
+
 			<h1 class="text-3xl font-bold pt-8 lg:pt-0">이름</h1>
 			<div class="mx-auto w-3/5 pt-3 border-b-2 border-blue-500 opacity-25"></div>
 			<p class="pt-4 text-base font-bold flex items-center justify-center ">
@@ -140,7 +140,7 @@
 				<button class="font-bold py-2 px-4 rounded-full"
                     style="background-color: rgb(49, 49, 49); color: white;">
 				  수정
-				</button> 
+				</button>
 			</div>
             <div id="clist" style="position: relative;">
                 <p class="pt-8 text-sm">가입된 동아리</p>
@@ -148,7 +148,7 @@
 		</div>
 	</div>
 	  <div class="absolute top-0 right-0">
-		<button class="js-change-theme focus:outline-none" 
+		<button class="js-change-theme focus:outline-none"
         style="position: absolute; top: 50px; right: 10px;">
             🌙</button>
 	  </div>
@@ -163,8 +163,8 @@
 		const toggle = document.querySelector('.js-change-theme');
 		const body = document.querySelector('body');
 		const profile = document.getElementById('profile');
-		
-		
+
+
 		toggle.addEventListener('click', () => {
 
 		  if (body.classList.contains('text-gray-900')) {
@@ -178,14 +178,14 @@
 			toggle.innerHTML = "🌙";
 			body.classList.remove('text-gray-100');
 			body.classList.add('text-gray-900');
-			profile.classList.remove('bg-gray-900');			
+			profile.classList.remove('bg-gray-900');
 			profile.classList.add('bg-white');
-			
+
 		  }
 		});
 
 
-		
+
     </script>
     <script language = "javascript">
         function print_list(){
@@ -195,7 +195,7 @@
             console.log('val : ' + val + "?");
         };
     </script>
-	
+
 </body>
 
 </html>

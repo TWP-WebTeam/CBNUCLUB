@@ -32,36 +32,33 @@ include "./include/session.php";
           </div>
           <div class="menu-bar">
               <ul class="main-menu">
-                  <li class="sub-menu">
-                      <a href="./clubpage1.php" style="text-decoration: none; color: black;">
-                          동아리 현황</a>
-                      <ul class="sub-menu2">
-                          <li>
-                              <a href="./club_status1.php" class="sub-list" style="padding-top: 10px;">중앙동아리</a>
-                          </li>
-                          <li >
-                              <a href="" class="sub-list">전자정보대학</a>
-                          </li>
-                          <li>
-                              <a href="" class="sub-list">공과대학</a>
-                          </li>
-                          <li>
-                              <a href="" class="sub-list">생활과학대학</a>
-                          </li>
-                          <li>
-                              <a href="" class="sub-list">수의과대학</a>
-                          </li>
-                          <li>
-                              <a href="" class="sub-list">약학대학</a>
-                          </li>
-                          <li>
-                              <a href="" class="sub-list">의과대학</a>
-                          </li>
-                          <li>
-                              <a href="" class="sub-list">사범대학</a>
-                          </li>
-                      </ul>
-                  </li>
+                <li class="sub-menu">
+                    <a href="../html/club_status.html" style="text-decoration: none; color: black;">
+                        동아리 현황</a>
+                    <ul class="sub-menu2">
+                        <li>
+                            <a href="../html/club_status.html" class="sub-list" style="padding-top: 10px;">중앙동아리</a>
+                        </li>
+                        <li >
+                            <a href="../html/clubpage1.html" class="sub-list" id="list1"
+                                onmouseover="Change_img();"
+                                onmouseout="Change_text();">전자정보대학</a>
+                        </li>
+                        <li>
+                            <a href="../html/clubpage2.html" class="sub-list">공과대학</a>
+                        </li>
+                        <li>
+                            <a href="../html/clubpage3.html" class="sub-list">생활과학대학</a>
+                        </li>
+                        <li>
+                            <a href="../html/clubpage4.html" class="sub-list">수의과대학</a>
+                        </li>
+
+                        <li>
+                            <a href="../html/clubpage5.html" class="sub-list">의과대학</a>
+                        </li>
+                    </ul>
+                </li>
 
                   <li class="sub-menu">
                       <a href="" style="text-decoration: none; color: black;">동아리 신청하기</a>
@@ -184,7 +181,7 @@ include "./include/session.php";
             <div class="box">
               <div class="no" style=" position:static; float:left;">
                 <h2>오늘 솔못 산책하다가 지갑주웠어요!</h2>
-                <p style="font-size:15px;">쪽지로 연락주세요. 사진첨부합니다!</p>  <br>
+                <p style="font-size:15px;">쪽지로 연락주세요! 사진첨부합니다!</p>  <br>
                 <span style="font-size:18px;" class="glyphicon glyphicon-eye-open"></span>
                 <label style="padding: 10px; color:grey; font-size:18px;">68</label>
                 <span style="padding-right: 10px; font-size:18px; color:grey;" class="glyphicon glyphicon-thumbs-up" onclick="fun_up(this,2)" onmouseover="OnMouseIn_up(this,2)" onmouseout="OnMouseOut_up(this,2)"></span>

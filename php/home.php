@@ -22,7 +22,7 @@
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
-    
+
         <script language = "javascript">
             temp = location.href.split("?");
             data = temp[1].split(":");
@@ -44,7 +44,7 @@
             <div class="menu-bar">
                 <ul class="main-menu">
                     <li class="sub-menu">
-                        <a href="./clubpage1.php" style="text-decoration: none; color: black;">
+                        <a href="../html/club_status.html" style="text-decoration: none; color: black;">
                             동아리 현황</a>
                         <ul class="sub-menu2">
                             <li>
@@ -87,7 +87,7 @@
                     </li>
 
                     <li class="sub-menu">
-                        <a href="" style="text-decoration: none; color: black;">커뮤니티</a>
+                        <a href="community_NOTI.php" style="text-decoration: none; color: black;">커뮤니티</a>
 
                         <ul class="sub-menu2">
                             <li>
@@ -105,7 +105,7 @@
                         </ul>
                     </li>
 
-                    <li class="sub-menu">                
+                    <li class="sub-menu">
                         <a href="" style="text-decoration: none; color: black;">마이 페이지</a>
 
                         <ul class="sub-menu2">

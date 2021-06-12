@@ -406,8 +406,9 @@ footer{
 .clear {
     clear: both;
 }
-#events-calendar {
 
+.heart{
+    width: 20px;
 }
 #events {
     width: 220px;
