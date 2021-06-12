@@ -732,10 +732,10 @@ var jsCalendar = (function(){
         }
 
         // Apply jsCalendar-unselectable class to out-of-range dates
-        for (i = 0; i < this._elements.bodyCols.length; ++i) {
-            if ( !this._isDateInRange(this._active[i]) )
-                this._elements.bodyCols[i].className = 'jsCalendar-unselectable';
-        }
+        // for (i = 0; i < this._elements.bodyCols.length; ++i) {
+        //     if ( !this._isDateInRange(this._active[i]) )
+        //         this._elements.bodyCols[i].className = 'jsCalendar-unselectable';
+        // }
 
         // Set days of the week locale
         for (i = 0; i < 7; i++) {

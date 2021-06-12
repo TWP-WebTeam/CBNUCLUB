@@ -368,7 +368,7 @@
                                 div.className = "event-item";
                                 div.textContent = (i + 1) + ". " + events[id][i].name;
                                 elements.list.appendChild(div);
-                                close = document.createElement("div");
+                                // close = document.createElement("div");
  
                                 // div.appendChild(close);
                                 // close.addEventListener("click", (function (date, index) {
@@ -396,7 +396,7 @@
                         }
 
                         // Remove event
-                        events[id].splice(index, 1);
+                        // events[id].splice(index, 1);
 
                         // Refresh events
                         showEvents(current);

@@ -169,8 +169,6 @@ a.sub-list:visited{
 }
 
 .list:hover {
-    transform: translateX(-150%);
-    /* font-size: 20px; */
     color: black;
 }
 
