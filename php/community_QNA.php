@@ -156,40 +156,40 @@ include "./include/session.php";
             <div class="text">
               <div  id="p1_1" style="margin-bottom:20px;">
                 <p onmouseover="OnMouseIn_text(this)" onmouseout="OnMouseOut_text(this)"><label style="margin-left:80px; margin-right:40px;">1</label>
-                  <label style="margin-right:50px; margin-left:50px;">동아리 가입은 누가 관리하나요?</label>
-                <label style="margin-right:100px; margin-left:80px;">관리자</label>
-                <label>2021.06.02</label></p>
+                  <label style="margin-right:50px; margin-left:50px;">동아리는 가입비는 어디에 제출해요?</label>
+                <label style="margin-right:95px; margin-left:55px;">wow12</label>
+                <label>2021.03.18</label></p>
                 <hr style="margin-right:40px; margin-left:8px;">
               </div>
 
               <div  id="p1_1" style="margin-bottom:20px;">
                 <p onmouseover="OnMouseIn_text(this)" onmouseout="OnMouseOut_text(this)"><label style="margin-left:80px; margin-right:40px;">2</label>
-                  <label style="margin-right:50px; margin-left:50px;">동아리 가입은 누가 관리하나요?</label>
-                <label style="margin-right:100px; margin-left:80px;">관리자</label>
-                <label>2021.06.02</label></p>
+                  <label style="margin-right:50px; margin-left:50px;">요즘에도 동아리 활동 하나요?</label>
+                <label style="margin-right:100px; margin-left:90px;">totori</label>
+                <label>2021.03.22</label></p>
                 <hr style="margin-right:40px; margin-left:8px;">
               </div>
 
               <div  id="p1_1" style="margin-bottom:20px;">
                 <p onmouseover="OnMouseIn_text(this)" onmouseout="OnMouseOut_text(this)"><label style="margin-left:80px; margin-right:40px;">3</label>
-                  <label style="margin-right:50px; margin-left:50px;">동아리 가입은 누가 관리하나요?</label>
-                <label style="margin-right:100px; margin-left:80px;">관리자</label>
-                <label>2021.06.02</label></p>
+                  <label style="margin-right:50px; margin-left:50px;">테니스 동아리 단톡 있나요?</label>
+                <label style="margin-right:105px; margin-left:105px;">tedi</label>
+                <label>2021.04.02</label></p>
                 <hr style="margin-right:40px; margin-left:8px;">
               </div>
 
               <div  id="p1_1" style="margin-bottom:20px;">
                 <p onmouseover="OnMouseIn_text(this)" onmouseout="OnMouseOut_text(this)"><label style="margin-left:80px; margin-right:40px;">4</label>
-                  <label style="margin-right:50px; margin-left:50px;">동아리 가입은 누가 관리하나요?</label>
-                <label style="margin-right:100px; margin-left:80px;">관리자</label>
-                <label>2021.06.02</label></p>
+                  <label style="margin-right:50px; margin-left:50px;">게시물 삭제는 어디서 하나요?</label>
+                <label style="margin-right:90px; margin-left:80px;">gogoring</label>
+                <label>2021.05.29</label></p>
                 <hr style="margin-right:40px; margin-left:8px;">
               </div>
 
               <div  id="p1_1" style="margin-bottom:20px;">
                 <p onmouseover="OnMouseIn_text(this)" onmouseout="OnMouseOut_text(this)"><label style="margin-left:80px; margin-right:40px;">5</label>
-                  <label style="margin-right:50px; margin-left:50px;">동아리 가입은 누가 관리하나요?</label>
-                <label style="margin-right:100px; margin-left:80px;">관리자</label>
+                  <label style="margin-right:50px; margin-left:50px;">회원탈퇴 시 정보는 어떻게 되나요?</label>
+                <label style="margin-right:95px; margin-left:60px;">laroha</label>
                 <label>2021.06.02</label></p>
                 <hr style="margin-right:40px; margin-left:8px;">
                 <button id="go_write" onmouseover="OnMouseIn_button(this)" onmouseout="OnMouseOut_button(this)" type="button" name="button"><a href="community_QNA_write.php">작성하기</a></button>
