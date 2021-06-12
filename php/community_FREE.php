@@ -181,7 +181,7 @@ include "./include/session.php";
             <div class="box">
               <div class="no" style=" position:static; float:left;">
                 <h2>오늘 솔못 산책하다가 지갑주웠어요!</h2>
-                <p style="font-size:15px;">쪽지로 연락주세요. 사진첨부합니다!</p>  <br>
+                <p style="font-size:15px;">쪽지로 연락주세요! 사진첨부합니다!</p>  <br>
                 <span style="font-size:18px;" class="glyphicon glyphicon-eye-open"></span>
                 <label style="padding: 10px; color:grey; font-size:18px;">68</label>
                 <span style="padding-right: 10px; font-size:18px; color:grey;" class="glyphicon glyphicon-thumbs-up" onclick="fun_up(this,2)" onmouseover="OnMouseIn_up(this,2)" onmouseout="OnMouseOut_up(this,2)"></span>
