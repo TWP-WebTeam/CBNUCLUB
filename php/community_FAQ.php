@@ -158,39 +158,39 @@ include "./include/session.php";
                 <p onmouseover="OnMouseIn_text(this)" onmouseout="OnMouseOut_text(this)"><label style="margin-left:80px; margin-right:40px;">1</label>
                   <label style="margin-right:50px; margin-left:50px;">동아리 가입은 누가 관리하나요?</label>
                 <label style="margin-right:100px; margin-left:80px;">관리자</label>
-                <label>2021.06.02</label></p>
+                <label>2021.03.01</label></p>
                 <hr style="margin-right:40px; margin-left:8px;">
               </div>
 
               <div  id="p1_1" style="margin-bottom:20px;">
                 <p onmouseover="OnMouseIn_text(this)" onmouseout="OnMouseOut_text(this)"><label style="margin-left:80px; margin-right:40px;">2</label>
-                  <label style="margin-right:50px; margin-left:50px;">동아리 가입은 누가 관리하나요?</label>
+                  <label style="margin-right:35px; margin-left:50px;">동아리 활동 시간이 겹쳐도 되나요?</label>
                 <label style="margin-right:100px; margin-left:80px;">관리자</label>
-                <label>2021.06.02</label></p>
+                <label>2021.03.01</label></p>
                 <hr style="margin-right:40px; margin-left:8px;">
               </div>
 
               <div  id="p1_1" style="margin-bottom:20px;">
                 <p onmouseover="OnMouseIn_text(this)" onmouseout="OnMouseOut_text(this)"><label style="margin-left:80px; margin-right:40px;">3</label>
-                  <label style="margin-right:50px; margin-left:50px;">동아리 가입은 누가 관리하나요?</label>
-                <label style="margin-right:100px; margin-left:80px;">관리자</label>
-                <label>2021.06.02</label></p>
+                  <label style="margin-right:20px; margin-left:50px;">동아리 탈퇴 시 개인정보 처리는 어떻게 되나요?</label>
+                <label style="margin-right:100px; margin-left:25px;">관리자</label>
+                <label>2021.03.01</label></p>
                 <hr style="margin-right:40px; margin-left:8px;">
               </div>
 
               <div  id="p1_1" style="margin-bottom:20px;">
                 <p onmouseover="OnMouseIn_text(this)" onmouseout="OnMouseOut_text(this)"><label style="margin-left:80px; margin-right:40px;">4</label>
-                  <label style="margin-right:50px; margin-left:50px;">동아리 가입은 누가 관리하나요?</label>
-                <label style="margin-right:100px; margin-left:80px;">관리자</label>
-                <label>2021.06.02</label></p>
+                  <label style="margin-right:40px; margin-left:50px;">동아리 회원 모집기간이 정해져 있나요?</label>
+                <label style="margin-right:100px; margin-left:50px;">관리자</label>
+                <label>2021.04.02</label></p>
                 <hr style="margin-right:40px; margin-left:8px;">
               </div>
 
               <div  id="p1_1" style="margin-bottom:20px;">
                 <p onmouseover="OnMouseIn_text(this)" onmouseout="OnMouseOut_text(this)"><label style="margin-left:80px; margin-right:40px;">5</label>
-                  <label style="margin-right:50px; margin-left:50px;">동아리 가입은 누가 관리하나요?</label>
-                <label style="margin-right:100px; margin-left:80px;">관리자</label>
-                <label>2021.06.02</label></p>
+                  <label style="margin-right:45px; margin-left:50px;">비대면 수업 중 동아리실 개방하나요?</label>
+                <label style="margin-right:100px; margin-left:60px;">관리자</label>
+                <label>2021.05.10</label></p>
                 <hr style="margin-right:40px; margin-left:8px;">
               </div>
             </div>

@@ -17,3 +17,26 @@ function push_list(){
 // function print_list(){
 //     document.getElementById("clist").innerHTML = list;
 // }
+
+// (function (global) {
+//     document.getElementById("output").value = global.localStorage.getItem("mySharedData");
+// }(window));
+
+// $(document).ready(function () {
+//     var val = location.href.substr(
+//         location.href.lastIndexOf('=') + 1
+//     );
+//     console.log('val : ' + val);
+// });
+
+function df(){
+temp = location.href.split("?");
+data=temp[1].split("/");
+getElementById('output').innerHTML = ""+heart;
+    console.log("TAGTAG : " + heart);    //콘솔에 전달받은 값 띄워서 확인하기
+    alert("ghkrdls"+heart);
+}
+
+function dhf(){
+    alert("찜을 하셨습니다! \n\n");
+}

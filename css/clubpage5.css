@@ -242,6 +242,7 @@ body {
     right: 80px;
     font-style: bold;
     font-size:17px;
+    width: 170px;
     border-radius: 5px 5px;
     background-color: white;
     border-radius: 5px 5px;
@@ -253,7 +254,8 @@ body {
     font-size: 20px;
     color: black;
     text-align: left;
-    padding-right: 30px;    
+    padding-right: 30px; 
+    margin-top: 20px;   
   }
 
   #dp ul li{
@@ -280,3 +282,272 @@ body {
       width: 300px;
   }
 
+ .heart{
+    width: 20px;
+}
+
+
+#dp1{
+  position : fixed;   
+  top: 320px;
+  right: 80px;
+  font-style: bold;
+  font-size:17px;
+  border-radius: 5px 5px;
+  background-color: white;
+  width: 170px;
+  border-radius: 5px 5px;
+  box-shadow: 0 0 10px rgb(133, 133, 133);
+}
+
+#dp1 ul{
+  list-style: none;
+  font-size: 20px;
+  color: black;
+  text-align: left;
+  padding-right: 30px;    
+}
+
+#dp1 ul li{
+  /* padding-bottom: 10px; */
+  text-align: center;
+}
+
+#dp1 ul li a{
+    text-decoration: none;
+    /* padding-bottom: 100px;
+    color :black; */
+    text-align: left;
+    padding: 0px;
+}
+
+#pro1 {
+  position: absolute;
+  top: 280px;
+  left: 452px;
+  width: 270px;
+  height: 150px;
+  text-align: center;
+  padding-top: 70px;
+  background-color: white;
+  opacity: 0.4;
+}
+#pro2 {
+  position: absolute;
+  top: 614px;
+  left: 452px;
+  width: 270px;
+  height: 150px;
+  text-align: center;
+  padding-top: 70px;
+  background-color: white;
+  opacity: 0.4;
+}
+#pro3 {
+  position: absolute;
+  top: 948px;
+  left: 452px;
+  width: 270px;
+  height: 150px;
+  text-align: center;
+  padding-top: 70px;
+  background-color: white;
+  opacity: 0.4;
+}
+#pro4 {
+  position: absolute;
+  top: 1280px;
+  left:  452px;
+  width: 270px;
+  height: 150px;
+  text-align: center;
+  padding-top: 70px;
+  background-color: white;
+  opacity: 0.4;
+}
+#pro5 {
+  position: absolute;
+  top: 1610px;
+  left:  452px;
+  width: 270px;
+  height: 150px;
+  text-align: center;
+  padding-top: 70px;
+  background-color: white;
+  opacity: 0.4;
+}
+
+#pro6 {
+    position: absolute;
+    top: 1944px;
+    left: 452px;
+    width: 270px;
+    height: 150px;
+    text-align: center;
+    padding-top: 70px;
+    background-color: white;
+    opacity: 0.4;
+  }
+  #pro7 {
+    position: absolute;
+    top: 2279px;
+    left: 452px;
+    width: 270px;
+    height: 150px;
+    text-align: center;
+    padding-top: 70px;
+    background-color: white;
+    opacity: 0.4;
+  }
+  #pro8 {
+    position: absolute;
+    top: 2613px;
+    left: 452px;
+    width: 270px;
+    height: 150px;
+    text-align: center;
+    padding-top: 70px;
+    background-color: white;
+    opacity: 0.4;
+  }
+  #pro9 {
+    position: absolute;
+    top: 2945px;
+    left:  452px;
+    width: 270px;
+    height: 150px;
+    text-align: center;
+    padding-top: 70px;
+    background-color: white;
+    opacity: 0.4;
+  }
+  #pro10 {
+    position: absolute;
+    top: 3278px;
+    left:  452px;
+    width: 270px;
+    height: 150px;
+    text-align: center;
+    padding-top: 70px;
+    background-color: white;
+    opacity: 0.4;
+  }
+  #pro11 {
+    position: absolute;
+    top: 3690px;
+    left: 452px;
+    width: 270px;
+    height: 150px;
+    text-align: center;
+    padding-top: 70px;
+    background-color: white;
+    opacity: 0.4;
+  }
+  #pro12 {
+    position: absolute;
+    top: 4023px;
+    left: 452px;
+    width: 270px;
+    height: 150px;
+    text-align: center;
+    padding-top: 70px;
+    background-color: white;
+    opacity: 0.4;
+  }
+  #pro13 {
+    position: absolute;
+    top: 4357px;
+    left: 452px;
+    width: 270px;
+    height: 150px;
+    text-align: center;
+    padding-top: 70px;
+    background-color: white;
+    opacity: 0.4;
+  }
+  #pro14 {
+    position: absolute;
+    top: 4688px;
+    left:  452px;
+    width: 270px;
+    height: 150px;
+    text-align: center;
+    padding-top: 70px;
+    background-color: white;
+    opacity: 0.4;
+  }
+  #pro15 {
+    position: absolute;
+    top: 5022px;
+    left:  452px;
+    width: 270px;
+    height: 150px;
+    text-align: center;
+    padding-top: 70px;
+    background-color: white;
+    opacity: 0.4;
+  }
+  
+  #pro16 {
+      position: absolute;
+      top: 5354px;
+      left: 452px;
+      width: 270px;
+      height: 150px;
+      text-align: center;
+      padding-top: 70px;
+      background-color: white;
+      opacity: 0.4;
+    }
+    #pro17 {
+      position: absolute;
+      top: 5687px;
+      left: 452px;
+      width: 270px;
+      height: 150px;
+      text-align: center;
+      padding-top: 70px;
+      background-color: white;
+      opacity: 0.4;
+    }
+    #pro18 {
+      position: absolute;
+      top: 6020px;
+      left: 452px;
+      width: 270px;
+      height: 150px;
+      text-align: center;
+      padding-top: 70px;
+      background-color: white;
+      opacity: 0.4;
+    }
+    #pro19 {
+      position: absolute;
+      top: 6354px;
+      left:  452px;
+      width: 270px;
+      height: 150px;
+      text-align: center;
+      padding-top: 70px;
+      background-color: white;
+      opacity: 0.4;
+    }
+.promotion{
+  visibility: hidden;
+}
+
+#content{
+  height: 300px;
+}
+
+#p {
+  color: black;
+}
+
+.clubimg{
+    top: 2597px;
+    left: 430px;
+    width: 270px;
+    height: 150px;
+
+}

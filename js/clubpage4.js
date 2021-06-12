@@ -1,11 +1,11 @@
 var arr = new Array();  //heart 눌린거 
 var count = 0;
-var club = new Array('','SAMMARU','CUVIC', 'PDA-Pro', 'EMSYS', 'Nest.net', 'NOVA', 'CGAC', 'TUX');
+var club = new Array('','돋움', '돌봄','바람소리', '비상', '시너지', '어절씨구', '외야수','페가수스','나르샤','LAMP');
 var cl = new Array(); //찜 목록에서 몇 번째에 어떤 동아리가
 var img2 = 0;
 
 
-for(var i = 1; i<9;i++)
+for(var i = 1; i<11;i++)
 {
   arr[i] = 0;
   cl[i] = 0;
@@ -23,7 +23,7 @@ function Change_img(num){
     }
     // console.log(img2);
 
-    if(img1.getAttribute('src') == "../img/software/img"+num+".jpg" || img1.getAttribute('src') == "../img/noimg.jpg"){
+    if(img1.getAttribute('src') == "../img/vete/img"+num+".jpg" || img1.getAttribute('src') == "../img/noimg.jpg"){
         img1.setAttribute("src", "../img/img_change/imgw.PNG");
         img1.setAttribute("width", "50");
         img1.setAttribute("height", "80");
@@ -46,7 +46,7 @@ function Change_img(num){
         img2 = 0;
       }
       else{
-        img1.setAttribute("src", "../img/software/img"+num+".jpg");
+        img1.setAttribute("src", "../img/vete/img"+num+".jpg");
         content2.innerHTML = "Click하면 동아리 소개를 볼 수 있어요!";
         content2.style.width = "270px";
         img1.setAttribute("width", "270");
@@ -59,6 +59,8 @@ function Change_img(num){
 
 }
 
+
+
 function submit(){
 
       alert("가입 페이지로 넘어갑니다.");    
@@ -68,7 +70,7 @@ function submit(){
 function changeheart(n)
     {
      
-      for(var i =1;i<9;i++)
+      for(var i =1;i<11;i++)
       {
         if(n=="heart"+i)
         {
@@ -95,7 +97,6 @@ function changeheart(n)
             alert("찜을 해제하셨습니다!");
             arr[i] = 0;
             var j;
-            // alert("찜을 해제하셨습니다!"+"j :"+ j+ "cl[j]:"+cl[j]);
            for(j=1;j<9;j++)
            {
              if(cl[j] == i)
@@ -106,7 +107,6 @@ function changeheart(n)
         
             count--;
               var str2;
-              // document.getElementById(str2).innerHTML="";
               cl[j] =0;
 
               var num = j+1;
