@@ -1,6 +1,6 @@
 var arr = new Array();  //heart 눌린거 
 var count = 0;
-var club = new Array('','SAMMARU','CUVIC', 'PDA-Pro', 'EMSYS', 'Nest.net', 'NOVA', 'CGAC', 'TUX');
+var club = new Array('','한마루(HANMARU)','그린스타터(Green-Sterter)', 'G.N. (Y.E.S)', '心心풀이', 'KEIKI');
 var cl = new Array(); //찜 목록에서 몇 번째에 어떤 동아리가
 var img2 = 0;
 
@@ -23,7 +23,7 @@ function Change_img(num){
     }
     // console.log(img2);
 
-    if(img1.getAttribute('src') == "../img/software/img"+num+".jpg" || img1.getAttribute('src') == "../img/noimg.jpg"){
+    if(img1.getAttribute('src') == "../img/lifescience/img"+num+".jpg" || img1.getAttribute('src') == "../img/noimg.jpg"){
         img1.setAttribute("src", "../img/img_change/imgw.PNG");
         img1.setAttribute("width", "50");
         img1.setAttribute("height", "80");
@@ -46,7 +46,7 @@ function Change_img(num){
         img2 = 0;
       }
       else{
-        img1.setAttribute("src", "../img/software/img"+num+".jpg");
+        img1.setAttribute("src", "../img/lifescience/img"+num+".jpg");
         content2.innerHTML = "Click하면 동아리 소개를 볼 수 있어요!";
         content2.style.width = "270px";
         img1.setAttribute("width", "270");
@@ -58,6 +58,8 @@ function Change_img(num){
     }
 
 }
+
+
 
 function submit(){
 
@@ -95,7 +97,6 @@ function changeheart(n)
             alert("찜을 해제하셨습니다!");
             arr[i] = 0;
             var j;
-            // alert("찜을 해제하셨습니다!"+"j :"+ j+ "cl[j]:"+cl[j]);
            for(j=1;j<9;j++)
            {
              if(cl[j] == i)
@@ -106,7 +107,6 @@ function changeheart(n)
         
             count--;
               var str2;
-              // document.getElementById(str2).innerHTML="";
               cl[j] =0;
 
               var num = j+1;

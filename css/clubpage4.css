@@ -153,7 +153,7 @@ body {
   
   .content{
       text-align: left;
-      padding-top: 100px;
+      padding-top: 120px;
       padding-left: 30px;
 
   }
@@ -244,6 +244,7 @@ body {
     font-size:17px;
     border-radius: 5px 5px;
     background-color: white;
+    width: 170px;
     border-radius: 5px 5px;
     box-shadow: 0 0 10px rgb(133, 133, 133);
       
@@ -254,6 +255,7 @@ body {
     color: black;
     text-align: left;
     padding-right: 30px;    
+    margin-top: 20px;
   }
 
   #dp ul li{
@@ -280,3 +282,176 @@ body {
       width: 300px;
   }
 
+ .heart{
+    width: 20px;
+}
+
+
+#dp1{
+  position : fixed;   
+  top: 300px;
+  right: 80px;
+  font-style: bold;
+  font-size:17px;
+  border-radius: 5px 5px;
+  background-color: white;
+  width: 170px;
+  border-radius: 5px 5px;
+  box-shadow: 0 0 10px rgb(133, 133, 133);
+}
+
+#dp1 ul{
+  list-style: none;
+  font-size: 20px;
+  color: black;
+  text-align: left;
+  padding-right: 30px;    
+}
+
+#dp1 ul li{
+  /* padding-bottom: 10px; */
+  text-align: center;
+}
+
+#dp1 ul li a{
+    text-decoration: none;
+    /* padding-bottom: 100px;
+    color :black; */
+    text-align: left;
+    padding: 0px;
+}
+
+#pro1 {
+  position: absolute;
+  top: 287px;
+  left: 430px;
+  width: 270px;
+  height: 150px;
+  text-align: center;
+  padding-top: 70px;
+  background-color: white;
+  opacity: 0.4;
+}
+#pro2 {
+  position: absolute;
+  top: 620px;
+  left: 430px;
+  width: 270px;
+  height: 150px;
+  text-align: center;
+  padding-top: 70px;
+  background-color: white;
+  opacity: 0.4;
+}
+#pro3 {
+  position: absolute;
+  top: 954px;
+  left: 430px;
+  width: 270px;
+  height: 150px;
+  text-align: center;
+  padding-top: 70px;
+  background-color: white;
+  opacity: 0.4;
+}
+#pro4 {
+  position: absolute;
+  top: 1287px;
+  left:  430px;
+  width: 270px;
+  height: 150px;
+  text-align: center;
+  padding-top: 70px;
+  background-color: white;
+  opacity: 0.4;
+}
+#pro5 {
+  position: absolute;
+  top: 1620px;
+  left:  430px;
+  width: 270px;
+  height: 150px;
+  text-align: center;
+  padding-top: 70px;
+  background-color: white;
+  opacity: 0.4;
+}
+
+#pro6 {
+    position: absolute;
+    top: 1952px;
+    left: 430px;
+    width: 270px;
+    height: 150px;
+    text-align: center;
+    padding-top: 70px;
+    background-color: white;
+    opacity: 0.4;
+}
+#pro7 {
+    position: absolute;
+    top: 2285px;
+    left: 430px;
+    width: 270px;
+    height: 150px;
+    text-align: center;
+    padding-top: 70px;
+    background-color: white;
+    opacity: 0.4;
+}
+#pro8 {
+    position: absolute;
+    top: 2620px;
+    left: 430px;
+    width: 270px;
+    height: 150px;
+    text-align: center;
+    padding-top: 70px;
+    background-color: white;
+    opacity: 0.4;
+}
+
+
+#pro9 {
+    position: absolute;
+    top: 2952px;
+    left: 430px;
+    width: 270px;
+    height: 150px;
+    text-align: center;
+    padding-top: 70px;
+    background-color: white;
+    opacity: 0.4;
+}
+#pro10 {
+    position: absolute;
+    top: 3285px;
+    left: 430px;
+    width: 270px;
+    height: 150px;
+    text-align: center;
+    padding-top: 70px;
+    background-color: white;
+    opacity: 0.4;
+}
+
+
+.promotion{
+  visibility: hidden;
+}
+
+#content{
+  height: 300px;
+}
+
+#p {
+  color: black;
+}
+
+.clubimg{
+    top: 2597px;
+    left: 430px;
+    width: 270px;
+    height: 150px;
+
+}

@@ -11,9 +11,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/home.css">
+        <link rel="stylesheet" href="../css/chart.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
         <title>CBNU CLUB</title>
+        <script src="../js/map.js"></script>
+        <script src="../js/chart.js"></script>
         <script src="../js/home.js"></script>
         <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
@@ -45,28 +48,25 @@
                             동아리 현황</a>
                         <ul class="sub-menu2">
                             <li>
-                                <a href="./club_status1.php" class="sub-list" style="padding-top: 10px;">중앙동아리</a>
+                                <a href="../html/club_status.html" class="sub-list" style="padding-top: 10px;">중앙동아리</a>
                             </li>
                             <li >
-                                <a href="" class="sub-list">전자정보대학</a>
+                                <a href="../html/clubpage1.html" class="sub-list">전자정보대학</a>
                             </li>
                             <li>
-                                <a href="" class="sub-list">공과대학</a>
+                                <a href="../html/clubpage2.html" class="sub-list">공과대학</a>
                             </li>
                             <li>
-                                <a href="" class="sub-list">생활과학대학</a>
+                                <a href="../html/clubpage3.html" class="sub-list">생활과학대학</a>
                             </li>
                             <li>
-                                <a href="" class="sub-list">수의과대학</a>
+                                <a href="../html/clubpage4.html" class="sub-list">수의과대학</a>
                             </li>
                             <li>
-                                <a href="" class="sub-list">약학대학</a>
+                                <a href="../html/clubpage5.html" class="sub-list">약학대학</a>
                             </li>
                             <li>
-                                <a href="" class="sub-list">의과대학</a>
-                            </li>
-                            <li>
-                                <a href="" class="sub-list">사범대학</a>
+                                <a href="../html/clubpage6.html" class="sub-list">의과대학</a>
                             </li>
                         </ul>
                     </li>
@@ -235,8 +235,14 @@
                     <li><a href="" class="list-group-item"><div class="article-title">제목</div><div class="created_at">게시날짜</div></a></li>
                 </ul>
             </div>
-
-        </section>
+            <div  style=" position: absolute; left: 0px; margin-top: 10px;">
+            <div style="width:500px; height: 300px;"  id="map" ></div>
+            </div>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCxi-l8-EWXOu-L6tD9lpDQTdysFKcIJA&callback=myMap"></script>
+                <div  style=" position: absolute; left: 700px; margin-top: 10px;">
+                <div id = "chart_div"></div>
+                </div>
+            </section>
 
 
         <!-- 구글 맵 넣기 !! -->

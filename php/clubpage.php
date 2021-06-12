@@ -56,9 +56,6 @@
                                 <a href="" class="sub-list">수의과대학</a>
                             </li>
                             <li>
-                                <a href="" class="sub-list">약학대학</a>
-                            </li>
-                            <li>
                                 <a href="" class="sub-list">의과대학</a>
                             </li>
                             <li>
@@ -137,26 +134,21 @@
                         <a href="./clubpage.php" class="list 1">중앙동아리</a>
                     </li>
                     <li>
-                        <a href="./clubpage1.php" class="list 2">전자정보대학</a>
+                        <a href="../html/clubpage1.html" class="list 2">전자정보대학</a>
                     </li>
                     <li>
-                        <a href="./clubpage2.php" class="list 3">공과대학</a>
+                        <a href="../html/clubpage2.html" class="list 3">공과대학</a>
                     </li>
                     <li>
-                        <a href="./clubpage3.php" class="list 4">생활과학대학</a>
+                        <a href="../html/clubpage3.html" class="list 4">생활과학대학</a>
                     </li>
                     <li>
-                        <a href="./clubpage4.php" class="list 5">수의과대학</a>
-                    </li>
-                    <li>
-                        <a href="" class="list 6">약학대학</a>
+                        <a href="../html/clubpage4.html" class="list 5">수의과대학</a>
                     </li>
                     <li>
                         <a href="" class="list 7">의과대학</a>
                     </li>
-                    <li>
-                        <a href="" class="list 8">사범대학</a>
-                    </li>
+
                 </ul>
             </div>
             <div id="dp">
