@@ -1,3 +1,13 @@
+function pinSymbol(color) {
+  return {
+      path: 'M 0,0 C -2,-20 -10,-22 -10,-30 A 10,10 0 1,1 10,-30 C 10,-22 2,-20 0,0 z',
+      fillColor: color,
+      fillOpacity: 1,
+      strokeColor: '#FFF',
+      strokeWeight: 2,
+      scale: 1.5,
+  };
+}
 
 function myMap() {
   var mapCanvas = document.getElementById("map");
@@ -12,42 +22,44 @@ function myMap() {
 
   var mapOptions = {
      center: engine,
-    zoom:16
+      zoom:16
   };
 
   var map = new google.maps.Map(mapCanvas, mapOptions);
 
   var marker = new google.maps.Marker({
-   position:engine
+    position:engine,
+    icon: pinSymbol("#33CC00")
   });
   marker.setMap(map);
 
   var marker2 = new google.maps.Marker({
-   position:lifescience
+   position:lifescience,
+   icon: pinSymbol("#33CC00")
   });
   marker2.setMap(map);
 
   var marker3 = new google.maps.Marker({
-   position:medicine
- 
+   position:medicine,
+   icon: pinSymbol("#33CC00")
   });
   marker3.setMap(map);
 
   var marker4 = new google.maps.Marker({
-   position:vete
-  
+   position:vete,
+   icon: pinSymbol("#33CC00")
   });
   marker4.setMap(map);
 
   var marker5 = new google.maps.Marker({
-   position:nursing
-  
+   position:nursing,
+   icon: pinSymbol("#33CC00")
   });
   marker5.setMap(map);
 
   var marker6 = new google.maps.Marker({
-   position:elect
-  
+   position:elect,
+   icon: pinSymbol("#33CC00")
   });
   marker6.setMap(map);
 

@@ -239,7 +239,7 @@
             <div style="width:500px; height: 300px;"  id="map" ></div>
             </div>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCxi-l8-EWXOu-L6tD9lpDQTdysFKcIJA&callback=myMap"></script>
-                <div  style=" position: absolute; left: 700px; margin-top: 10px;">
+                <div  style = "width:100px; height: 100px; position: absolute; left: 700px; margin-top: 10px;">
                 <div id = "chart_div"></div>
                 </div>
             </section>
