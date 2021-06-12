@@ -1,8 +1,8 @@
 <?php
-    $host = 'localhost:3307';
+    $host = 'localhost';
     $user = 'root';
-    $passWord = 'young2360';
-    $dbName = 'cbnuclub';
+    $passWord = 'qwer1234!';
+    $dbName = 'clubdb';
 
     $dbConnect = new mysqli($host,$user,$passWord,$dbName);
 ?>
