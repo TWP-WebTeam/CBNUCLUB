@@ -244,6 +244,7 @@ body {
     font-size:17px;
     border-radius: 5px 5px;
     background-color: white;
+    width: 170px;
     border-radius: 5px 5px;
     box-shadow: 0 0 10px rgb(133, 133, 133);
       
@@ -253,7 +254,8 @@ body {
     font-size: 20px;
     color: black;
     text-align: left;
-    padding-right: 30px;    
+    padding-right: 30px; 
+    margin-top: 10px;   
   }
 
   #dp ul li{
@@ -280,3 +282,116 @@ body {
       width: 300px;
   }
 
+ .heart{
+    width: 20px;
+}
+
+
+#dp1{
+  position : fixed;   
+  top: 320px;
+  right: 80px;
+  font-style: bold;
+  font-size:17px;
+  border-radius: 5px 5px;
+  background-color: white;
+  width: 170px;
+  border-radius: 5px 5px;
+  box-shadow: 0 0 10px rgb(133, 133, 133);
+}
+
+#dp1 ul{
+  list-style: none;
+  font-size: 20px;
+  color: black;
+  text-align: left;
+  padding-right: 30px;    
+}
+
+#dp1 ul li{
+  /* padding-bottom: 10px; */
+  text-align: center;
+}
+
+#dp1 ul li a{
+    text-decoration: none;
+    /* padding-bottom: 100px;
+    color :black; */
+    text-align: left;
+    padding: 0px;
+}
+
+#pro1 {
+  position: absolute;
+  top: 282px;
+  left: 452px;
+  width: 270px;
+  height: 150px;
+  text-align: center;
+  padding-top: 70px;
+  background-color: white;
+  opacity: 0.4;
+}
+#pro2 {
+  position: absolute;
+  top: 616px;
+  left: 452px;
+  width: 270px;
+  height: 150px;
+  text-align: center;
+  padding-top: 70px;
+  background-color: white;
+  opacity: 0.4;
+}
+#pro3 {
+  position: absolute;
+  top: 1026px;
+  left: 452px;
+  width: 270px;
+  height: 150px;
+  text-align: center;
+  padding-top: 70px;
+  background-color: white;
+  opacity: 0.4;
+}
+#pro4 {
+  position: absolute;
+  top: 1360px;
+  left:  452px;
+  width: 270px;
+  height: 150px;
+  text-align: center;
+  padding-top: 70px;
+  background-color: white;
+  opacity: 0.4;
+}
+#pro5 {
+  position: absolute;
+  top: 1693px;
+  left:  452px;
+  width: 270px;
+  height: 150px;
+  text-align: center;
+  padding-top: 70px;
+  background-color: white;
+  opacity: 0.4;
+}
+.promotion{
+  visibility: hidden;
+}
+
+#content{
+  height: 300px;
+}
+
+#p {
+  color: black;
+}
+
+.clubimg{
+    top: 2597px;
+    left: 430px;
+    width: 270px;
+    height: 150px;
+
+}
