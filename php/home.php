@@ -1,4 +1,6 @@
   <?php
+ include "../include/session.php";
+ include "../include/dbConnect.php";
  include "./include/session.php";
 
 ?>
@@ -17,6 +19,17 @@
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
+    
+        <script language = "javascript">
+            temp = location.href.split("?");
+            data = temp[1].split(":");
+            clubname = data[0];
+            clubgroup = data[1];
+            console.log(clubname);
+            document.getElementById('clubname').innerHTML = clubname;
+            document.getElementById('clubgroup').innerHTML = clubgroup;
+            document.getElementById('clubname').innerHTML = clubname;
+        </script>
     </head>
     <body>
         <div class="header">
@@ -92,7 +105,7 @@
                         </ul>
                     </li>
 
-                    <li class="sub-menu">
+                    <li class="sub-menu">                
                         <a href="" style="text-decoration: none; color: black;">마이 페이지</a>
 
                         <ul class="sub-menu2">
@@ -123,7 +136,7 @@
                 <?php
                 }else{
                 ?>
-                <a href="./logout.php" id="signout">로그아웃</a>
+                <a href="logout.php" id="signout">로그아웃</a>
                 <?php
                  }
                 ?>
@@ -171,9 +184,9 @@
                     </thead>
                     <tbody>
                         <tr style="height: 48px;">
-                            <td><a href="" class="table-content"><div class="article-title">Nest.net</div></a></td>
-                            <td><a href="" class="table-content"><div class="department">소프트웨어학과</div></a></td>
-                            <td><a href="" class="table-content"><div class="due-date">2021.06.30</div></a></td>
+                            <td><a href="" class="table-content"><div class="article-title" id="clubname">Nest.net</div></a></td>
+                            <td><a href="" class="table-content"><div class="department" id="clubgroup">소프트웨어학과</div></a></td>
+                            <td><a href="" class="table-content"><div class="due-date" id="deadline">2021.06.30</div></a></td>
                         </tr>
                         <tr style="height: 48px;">
                             <td><a href="" class="table-content"><div class="article-title">PDA</div></a></td>
