@@ -23,7 +23,7 @@
   <!-- <script src="../js/profile.js"></script>  -->
   <link rel="stylesheet" href="../css/profile.css">
   <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css"> 
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css">
 </head>
 
 <body style="background-image: linear-gradient(to bottom, rgba(190, 255, 168, 0.5), rgba(26, 114, 255, 0.5));">
@@ -36,41 +36,33 @@
         </div>
         <div class="menu-bar">
             <ul class="main-menu">
-                <li class="sub-menu">
-                    <a href="./" style="text-decoration: none; color: black;">
-                        동아리 현황</a>
-                    <ul class="sub-menu2">
-                        <li>
-                            <a href="" class="sub-list" style="padding-top: 10px;">중앙동아리</a>
-                        </li>
-                        <li >
-                            <a
-                                href=""
-                                class="sub-list"
-                                id="list1"
-                                onmouseover="Change_img();"
-                                onmouseout="Change_text();">전자정보대학</a>
-                        </li>
-                        <li>
-                            <a href="" class="sub-list">공과대학</a>
-                        </li>
-                        <li>
-                            <a href="" class="sub-list">생활과학대학</a>
-                        </li>
-                        <li>
-                            <a href="" class="sub-list">수의과대학</a>
-                        </li>
-                        <li>
-                            <a href="" class="sub-list">약학대학</a>
-                        </li>
-                        <li>
-                            <a href="" class="sub-list">의과대학</a>
-                        </li>
-                        <li>
-                            <a href="" class="sub-list">사범대학</a>
-                        </li>
-                    </ul>
-                </li>
+              <li class="sub-menu">
+                  <a href="../html/club_status.html" style="text-decoration: none; color: black;">
+                      동아리 현황</a>
+                  <ul class="sub-menu2">
+                      <li>
+                          <a href="../html/club_status.html" class="sub-list" style="padding-top: 10px;">중앙동아리</a>
+                      </li>
+                      <li >
+                          <a href="../html/clubpage1.html" class="sub-list" id="list1"
+                              onmouseover="Change_img();"
+                              onmouseout="Change_text();">전자정보대학</a>
+                      </li>
+                      <li>
+                          <a href="../html/clubpage2.html" class="sub-list">공과대학</a>
+                      </li>
+                      <li>
+                          <a href="../html/clubpage3.html" class="sub-list">생활과학대학</a>
+                      </li>
+                      <li>
+                          <a href="../html/clubpage4.html" class="sub-list">수의과대학</a>
+                      </li>
+
+                      <li>
+                          <a href="../html/clubpage5.html" class="sub-list">의과대학</a>
+                      </li>
+                  </ul>
+              </li>
 
                 <li class="sub-menu">
                     <a href="" style="text-decoration: none; color: black;">동아리 신청하기</a>
@@ -130,8 +122,8 @@
             </span>
             <div class="gnb">
             <?php
-           
-           
+
+
            if(empty($_SESSION['ses_userid'])){
           ?>
             <a href="signin.php" id="signin" onclick="Login()">로그인</a>
@@ -151,12 +143,12 @@
   <div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
 
 	<div id="profile" class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0">
-	
+
 		<div class="p-4 md:p-12 text-center lg:text-left">
 
 			<div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" style="background-image: url('https://source.unsplash.com/MP0IUfwrn0A')"></div>
             <?php
-           
+
            if(!empty($_SESSION['ses_userid'])){
           ?>
       <h1 class="text-3xl font-bold pt-8 lg:pt-0"><?php echo $_SESSION['ses_userid'] ?></h1>
@@ -164,7 +156,7 @@
 			<p class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start">
             <?php echo  $_SESSION['ses_userdpm'] ?></p>
 			<p class="pt-8 text-sm">가입된 동아리</p>
-            
+
       <?php
       }else{
       ?>
@@ -173,29 +165,29 @@
 			<p class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start">
                 학과 / 학년</p>
 			<p class="pt-8 text-sm">가입된 동아리</p>
-            
+
       <?php
        }
-      ?>    
+      ?>
             <div id="clist">
             </div>
 
 			<div class="pt-12 pb-8">
 				<button class="font-bold py-2 px-4 rounded-full" style="background-color: rgb(49, 49, 49); color: white;">
 				  수정
-				</button> 
+				</button>
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="w-full lg:w-2/5">
-		<img src="../img/flo.jpg" 
-        class="rounded-none lg:rounded-lg shadow-2xl" 
+		<img src="../img/flo.jpg"
+        class="rounded-none lg:rounded-lg shadow-2xl"
         style="width: 300px; height: 340px; box-shadow: 5;">
 
 	</div>
 	  <div class="absolute top-0 right-0">
-		<button class="js-change-theme focus:outline-none" 
+		<button class="js-change-theme focus:outline-none"
         style="position: absolute; top: 50px; right: 10px;">
             🌙</button>
 	  </div>
@@ -211,8 +203,8 @@
 		const toggle = document.querySelector('.js-change-theme');
 		const body = document.querySelector('body');
 		const profile = document.getElementById('profile');
-		
-		
+
+
 		toggle.addEventListener('click', () => {
 
 		  if (body.classList.contains('text-gray-900')) {
@@ -226,14 +218,14 @@
 			toggle.innerHTML = "🌙";
 			body.classList.remove('text-gray-100');
 			body.classList.add('text-gray-900');
-			profile.classList.remove('bg-gray-900');			
+			profile.classList.remove('bg-gray-900');
 			profile.classList.add('bg-white');
-			
+
 		  }
 		});
 
 
-		
+
     </script>
     <script language = "javascript">
         function print_list(){
@@ -243,7 +235,7 @@
             console.log('val : ' + val + "?");
         };
     </script>
-	
+
 </body>
 
 </html>
