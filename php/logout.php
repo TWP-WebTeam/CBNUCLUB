@@ -1,5 +1,5 @@
 <?php 
-  include "./include/session.php";
+  include "../include/session.php";
     
 ?>
 <!doctype html>
@@ -12,7 +12,7 @@
     <?php
       if ( $_SESSION['ses_userid']) {
         session_destroy();
-        echo("<script>location.replace('./home.php');</script>"); 
+        echo("<script>location.replace('../php/home.php');</script>"); 
       } else {
         echo '<h1>로그인 상태가 아닙니다.</h1>';
       }

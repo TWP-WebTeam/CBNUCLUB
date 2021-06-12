@@ -52,7 +52,7 @@
                     <a href="" style="text-decoration: none; color: black;">동아리 신청하기</a>
                     <ul class="sub-menu2">
                         <li>
-                            <a href="register.php" class="sub-list">등록하기</a>
+                            <a href="registerform.php" class="sub-list">등록하기</a>
                         </li>
                         <li>
                             <a href="club_status.php" class="sub-list">신청하기</a>
