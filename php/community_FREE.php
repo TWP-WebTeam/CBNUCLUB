@@ -148,56 +148,90 @@ include "./include/session.php";
           </div>
 
           <div class="middle">
-            <div class="subtitle">
-              <label style="margin-left:70px; margin-right:50px;">번호</label>   <label style="margin-right:105px; margin-left:100px;">제목</label>
-              <label style="margin-right:120px; margin-left:110px;">작성자</label>  <label>날짜</label>
-              <hr>
+            <hr>
+            <div class="box">
+              <div class="no" style=" position:static; float:left;">
+                <h2>동아리 추천해주실분!</h2>
+                <p style="font-size:15px;">신입생이고 일주일에 한번정도 참여할 수 있는 동아리 추천해주세요!!</p>  <br>
+                <span style="font-size:18px;" class="glyphicon glyphicon-eye-open"></span>
+                <label style="padding: 10px; color:grey; font-size:18px;">30</label>
+                <span style="padding-right: 10px; font-size:18px; color:grey;" class="glyphicon glyphicon-thumbs-up" onclick="fun_up(this,0)" onmouseover="OnMouseIn_up(this,0)" onmouseout="OnMouseOut_up(this,0)"></span>
+                <span style="padding-right: 10px; font-size:18px; color:grey;" class="glyphicon glyphicon-thumbs-down" onclick="fun_down(this,0)" onmouseover="OnMouseIn_down(this,0)" onmouseout="OnMouseOut_down(this,0)"></span>
+                <span style="padding-right: 10px; font-size:18px; color:grey;" class="glyphicon glyphicon-heart" onclick="fun_heart(this,0)" onmouseover="OnMouseIn_heart(this,0)" onmouseout="OnMouseOut_heart(this,0)"></span>
+              </div>
+              <div class="im" style=" position:static; float:right; margin-right:100px; margin-bottom:20px;">
+                <img src="../img/free/1.png" alt="1" height="100px" width="100px;">
+              </div>
+              <hr style="clear:both;">
             </div>
-            <div class="text">
-              <div  id="p1_1" style="margin-bottom:20px;">
-                <p onmouseover="OnMouseIn_text(this)" onmouseout="OnMouseOut_text(this)"><label style="margin-left:80px; margin-right:40px;">1</label>
-                  <label style="margin-right:50px; margin-left:50px;">동아리 가입은 누가 관리하나요?</label>
-                <label style="margin-right:100px; margin-left:80px;">관리자</label>
-                <label>2021.06.02</label></p>
-                <hr style="margin-right:40px; margin-left:8px;">
-              </div>
 
-              <div  id="p1_1" style="margin-bottom:20px;">
-                <p onmouseover="OnMouseIn_text(this)" onmouseout="OnMouseOut_text(this)"><label style="margin-left:80px; margin-right:40px;">2</label>
-                  <label style="margin-right:50px; margin-left:50px;">동아리 가입은 누가 관리하나요?</label>
-                <label style="margin-right:100px; margin-left:80px;">관리자</label>
-                <label>2021.06.02</label></p>
-                <hr style="margin-right:40px; margin-left:8px;">
+            <div class="box">
+              <div class="no" style=" position:static; float:left;">
+                <h2>학교주변 맛집 찾음</h2>
+                <p style="font-size:15px;">몽키만두 존맛탱! 같이갈사람~~</p>  <br>
+                <span style="font-size:18px;" class="glyphicon glyphicon-eye-open"></span>
+                <label style="padding: 10px; color:grey; font-size:18px;">12</label>
+                <span style="padding-right: 10px; font-size:18px; color:grey;" class="glyphicon glyphicon-thumbs-up" onclick="fun_up(this,1)" onmouseover="OnMouseIn_up(this,1)" onmouseout="OnMouseOut_up(this,1)"></span>
+                <span style="padding-right: 10px; font-size:18px; color:grey;" class="glyphicon glyphicon-thumbs-down" onclick="fun_down(this,1)" onmouseover="OnMouseIn_down(this,1)" onmouseout="OnMouseOut_down(this,1)"></span>
+                <span style="padding-right: 10px; font-size:18px; color:grey;" class="glyphicon glyphicon-heart" onclick="fun_heart(this,1)" onmouseover="OnMouseIn_heart(this,1)" onmouseout="OnMouseOut_heart(this,1)"></span>
               </div>
+              <div class="im" style=" position:static; float:right; margin-right:100px;  margin-bottom:20px;">
+                <img src="../img/free/2.png" alt="1" height="100px" width="100px;">
+              </div>
+              <hr style="clear:both;">
+            </div>
 
-              <div  id="p1_1" style="margin-bottom:20px;">
-                <p onmouseover="OnMouseIn_text(this)" onmouseout="OnMouseOut_text(this)"><label style="margin-left:80px; margin-right:40px;">3</label>
-                  <label style="margin-right:50px; margin-left:50px;">동아리 가입은 누가 관리하나요?</label>
-                <label style="margin-right:100px; margin-left:80px;">관리자</label>
-                <label>2021.06.02</label></p>
-                <hr style="margin-right:40px; margin-left:8px;">
+            <div class="box">
+              <div class="no" style=" position:static; float:left;">
+                <h2>오늘 솔못 산책하다가 지갑주웠어요!</h2>
+                <p style="font-size:15px;">쪽지로 연락주세요. 사진첨부합니다!</p>  <br>
+                <span style="font-size:18px;" class="glyphicon glyphicon-eye-open"></span>
+                <label style="padding: 10px; color:grey; font-size:18px;">68</label>
+                <span style="padding-right: 10px; font-size:18px; color:grey;" class="glyphicon glyphicon-thumbs-up" onclick="fun_up(this,2)" onmouseover="OnMouseIn_up(this,2)" onmouseout="OnMouseOut_up(this,2)"></span>
+                <span style="padding-right: 10px; font-size:18px; color:grey;" class="glyphicon glyphicon-thumbs-down" onclick="fun_down(this,2)" onmouseover="OnMouseIn_down(this,2)" onmouseout="OnMouseOut_down(this,2)"></span>
+                <span style="padding-right: 10px; font-size:18px; color:grey;" class="glyphicon glyphicon-heart" onclick="fun_heart(this,2)" onmouseover="OnMouseIn_heart(this,2)" onmouseout="OnMouseOut_heart(this,2)"></span>
               </div>
+              <div class="im" style=" position:static; float:right; margin-right:100px; margin-bottom:20px;">
+                <img src="../img/free/3.jpg" alt="1" height="100px" width="100px;">
+              </div>
+              <hr style="clear:both;">
+            </div>
 
-              <div  id="p1_1" style="margin-bottom:20px;">
-                <p onmouseover="OnMouseIn_text(this)" onmouseout="OnMouseOut_text(this)"><label style="margin-left:80px; margin-right:40px;">4</label>
-                  <label style="margin-right:50px; margin-left:50px;">동아리 가입은 누가 관리하나요?</label>
-                <label style="margin-right:100px; margin-left:80px;">관리자</label>
-                <label>2021.06.02</label></p>
-                <hr style="margin-right:40px; margin-left:8px;">
+            <div class="box">
+              <div class="no" style=" position:static; float:left;">
+                <h2>연탄봉사 동아리 질문이요!</h2>
+                <p style="font-size:15px;">일년에 몇번정도 가나요?? 언제가는지도 알고 싶어요!.....</p>  <br>
+                <span style="font-size:18px;" class="glyphicon glyphicon-eye-open"></span>
+                <label style="padding: 10px; color:grey; font-size:18px;">25</label>
+                <span style="padding-right: 10px; font-size:18px; color:grey;" class="glyphicon glyphicon-thumbs-up" onclick="fun_up(this,3)" onmouseover="OnMouseIn_up(this,3)" onmouseout="OnMouseOut_up(this,3)"></span>
+                <span style="padding-right: 10px; font-size:18px; color:grey;" class="glyphicon glyphicon-thumbs-down" onclick="fun_down(this,3)" onmouseover="OnMouseIn_down(this,3)" onmouseout="OnMouseOut_down(this,3)"></span>
+                <span style="padding-right: 10px; font-size:18px; color:grey;" class="glyphicon glyphicon-heart" onclick="fun_heart(this,3)" onmouseover="OnMouseIn_heart(this,3)" onmouseout="OnMouseOut_heart(this,3)"></span>
               </div>
+              <div class="im" style=" position:static; float:right; margin-right:100px; margin-bottom:20px;">
+                <img src="../img/free/4.png" alt="1" height="100px" width="100px;">
+              </div>
+              <hr style="clear:both;">
+            </div>
 
-              <div  id="p1_1" style="margin-bottom:20px;">
-                <p onmouseover="OnMouseIn_text(this)" onmouseout="OnMouseOut_text(this)"><label style="margin-left:80px; margin-right:40px;">5</label>
-                  <label style="margin-right:50px; margin-left:50px;">동아리 가입은 누가 관리하나요?</label>
-                <label style="margin-right:100px; margin-left:80px;">관리자</label>
-                <label>2021.06.02</label></p>
-                <hr style="margin-right:40px; margin-left:8px;">
-                <button id="go_write" onmouseover="OnMouseIn_button(this)" onmouseout="OnMouseOut_button(this)" type="button" name="button"><a href="community_QNA_write.php">작성하기</a></button>
+            <div class="box">
+              <div class="no" style=" position:static; float:left;">
+                <h2>영어동아리!</h2>
+                <p style="font-size:15px;">영어 스터디 동아리 만들려고 하는데 혹시 희망하는 분 계신가요??</p>  <br>
+                <span style="font-size:18px;" class="glyphicon glyphicon-eye-open"></span>
+                <label style="padding: 10px; color:grey; font-size:18px;">6</label>
+                <span style="padding-right: 10px; font-size:18px; color:grey;" class="glyphicon glyphicon-thumbs-up" onclick="fun_up(this,4)" onmouseover="OnMouseIn_up(this,4)" onmouseout="OnMouseOut_up(this,4)"></span>
+                <span style="padding-right: 10px; font-size:18px; color:grey;" class="glyphicon glyphicon-thumbs-down" onclick="fun_down(this,4)" onmouseover="OnMouseIn_down(this,4)" onmouseout="OnMouseOut_down(this,4)"></span>
+                <span style="padding-right: 10px; font-size:18px; color:grey;" class="glyphicon glyphicon-heart" onclick="fun_heart(this,4)" onmouseover="OnMouseIn_heart(this,4)" onmouseout="OnMouseOut_heart(this,4)"></span>
               </div>
+              <div class="im" style=" position:static; float:right; margin-right:100px; margin-bottom:20px;">
+                <img src="../img/free/1.png" alt="1" height="100px" width="100px;">
+              </div>
+              <hr style="clear:both;">
             </div>
           </div>
 
           <div class="search">
+            <button id="go_write" onmouseover="OnMouseIn_button(this)" onmouseout="OnMouseOut_button(this)" type="button" name="button"><a href="">작성하기</a></button> <br><br>
            <input style="height:35px; width:280px;  border : 1px solid rgb(206, 206, 206); border-radius: 5px 5px 5px 5px;" type="text" name="">
            <span onmouseover="OnMouseIn_button(this)" onmouseout="OnMouseOut_button(this)" style="background-color:black; color:white; padding:10px; border-radius: 5px 5px 5px 5px;" class="glyphicon glyphicon-search"></span>
           </div>
@@ -215,7 +249,7 @@ include "./include/session.php";
 
         </section>
 
-            <footer class="container-fluid" style="position: absolute; top: 1000px; background-color: rgba(255, 255, 255, 0.6)">
+            <footer class="container-fluid" style="position: static; margin-top: 50px;background-color: rgba(255, 255, 255, 0.6)">
             <p> --------
             </p>
             <!-- <iframe

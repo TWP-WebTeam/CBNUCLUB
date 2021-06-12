@@ -197,19 +197,14 @@ a.sub-list:visited{
 
 }
 
-.text{
-  font-size: 15px;
-  margin-left: 45px;
-  margin-top: 0px;
-}
-
 #go_write{
-  margin-left: 700px;
+  margin-left: 450px;
   background-color: black;
   border-radius: 5px 5px 5px 5px;
   color: white;
   border : 1px solid black;
   padding: 5px;
+  font-size: 15px;
 }
 
 #go_write>a{
@@ -220,4 +215,14 @@ a.sub-list:visited{
 .search{
   margin-left: 370px;
   margin-bottom: 20px;
+}
+
+.box{
+  padding: 20px;
+}
+.photo{
+  margin-left: 200px;
+}
+.no{
+    padding-left: 50px;
 }
