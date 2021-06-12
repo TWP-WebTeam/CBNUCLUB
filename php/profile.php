@@ -1,7 +1,12 @@
 <?php
- include "./include/session.php";
- include "./include/login.php";
-?>
+ include "../include/session.php";
+ include "../include/dbConnect.php";
+//  include "../php/login.php";
+
+    if(empty($_SESSION['ses_userid'])){
+            echo ("<script>alert('로그인이 필요합니다.');
+                    location.replace('../php/signin.php');</script>");
+    }else{?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -71,7 +76,7 @@
                     <a href="" style="text-decoration: none; color: black;">동아리 신청하기</a>
                     <ul class="sub-menu2">
                         <li>
-                            <a href="./register.php" class="sub-list">등록하기</a>
+                            <a href="registerform.php" class="sub-list">등록하기</a>
                         </li>
                         <li>
                             <a href="./club_status.php" class="sub-list">신청하기</a>
@@ -242,3 +247,4 @@
 </body>
 
 </html>
+    <?php } ?>

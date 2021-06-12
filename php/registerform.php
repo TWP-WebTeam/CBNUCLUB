@@ -17,7 +17,7 @@
     <body>
         <div class="header">
             <div class="Logo">
-                <a href="./home.html"
+                <a href="home.php"
                     style="text-decoration: none; font-size: 20px; color: black; position: fixed; left: 13%; padding-top: 10px;">
                     CBNUCLUB</a>
             </div>
@@ -58,7 +58,7 @@
                         <a href="" style="text-decoration: none; color: black;">동아리 신청하기</a>
                         <ul class="sub-menu2">
                             <li>
-                                <a href="./register.html" class="sub-list">등록하기</a>
+                                <a href="registerform.php" class="sub-list">등록하기</a>
                             </li>
                             <li>
                                 <a href="./club_status.html" class="sub-list">신청하기</a>
@@ -116,10 +116,10 @@
                 </div>
             </div>
         </div>
-
+        <!-- action="home.php" -->
         <section id="article">
             <div class="form">
-                <form class="form-horizontal" action="register.php" method="POST">
+                <form class="form-horizontal"  method="POST" id="form">
                     <h4 class="bold title" style="padding-left: 57px;">📌동아리 등록하기</h4>
                     <div class="form-group">
                       <label class="control-label col-sm-4">동아리명 :</label>
@@ -130,12 +130,12 @@
                     <div class="form-group">
                       <label class="control-label col-sm-4">동아리 대표자명 :</label>
                       <div class="col-sm-8">
-                        <input type="text" class="form-control" name="author">
+                        <input type="text" class="form-control" name="author" id="author">
                       </div>
                     </div>
                     <div class="form-group">
                         <label>동아리 소속 :</label>
-                            <select name="clubgroup">
+                            <select name="clubgroup" id="clubgroup">
                                 <option>-----</option>
                                 <option value="중앙동아리">중앙동아리</option>
                                 <option value="전자정보대학">전자정보대학</option>
@@ -149,7 +149,7 @@
                     </div>                  
                     <div class="form-group">
                         <label>동아리 회원 수 :</label>
-                            <select name="total_member">
+                            <select name="total_member" id="total_member">
                                 <option>-----</option>
                                 <option value="1~20명">1~20명</option>
                                 <option value="21~50명">21~50명</option>
@@ -159,20 +159,20 @@
                     <div class="form-group">
                         <label for="">동아리 소개 :</label><br>
                         <div class="col-sm-8">
-                            <textarea name="desc" id="" cols="35" rows="10" style="resize: none;"></textarea><br>
+                            <textarea name="desc" id="desc" cols="35" rows="10" style="resize: none;"></textarea><br>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="">동아리방 위치 :</label>
                         <div class="col-sm-8">
-                            <input type="text" name="location" placeholder="ex) S4-1 / 106호"><br>
+                            <input type="text" id="loca" name="location" placeholder="ex) S4-1 / 106호"><br>
                         </div>
                     </div>
                     <div class="form-group">
                       <div class="col-sm-offset-2 col-sm-10"><br>
-                        <input type="submit" name="" id="" value="등록하기"
+                        <a href="home.php"
                         style="background-color: rgb(131, 201, 252); border-radius: 5px 5px;"
-                        onclick="push_list();">
+                        onclick="push_list();">등록하기</a>
                       </div>
                     </div>
                   </form>
@@ -183,20 +183,27 @@
 
         <footer class="container-fluid"></footer>
         <script language = "javascript">
-            var list = ['0'];
-            var i = 1;
-            var ele;
+            function struct_club(){
+                var clubname = '';
+                var author = '';
+                var clubgroup = '';
+                var total_member = '';
+                var desc = '';
+                var loca = '';
 
-            function insert_list(){
-                ele =document.getElementById("cname").value;
-                console.log(ele);    
             }
 
             function push_list(){
-                // list.push(ele);
-                // i++;
-                // console.log(list);
-                // window.location.href = "profile.html?"+list+":"+ele;
+                var info = new struct_club();
+                info.clubname = document.getElementById('clubname').value;
+                // info.author = document.getElementById('author').value;
+                info.clubgroup = document.getElementById('clubgroup').value;
+                // info.total_member = document.getElementById('total_member').value;
+                // info.desc = document.getElementById('desc').value;
+                // info.loca = document.getElementById('loca').value;
+                // document.getElementById('form').action="location.href='home.php'";
+                console.log(info.clubname);
+                location.href="home.php?" + info.clubname + ":" + info.clubgroup;
             }
 
         </script>

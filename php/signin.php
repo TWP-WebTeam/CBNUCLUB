@@ -52,7 +52,7 @@
                     <a href="" style="text-decoration: none; color: black;">동아리 신청하기</a>
                     <ul class="sub-menu2">
                         <li>
-                            <a href="register.php" class="sub-list">등록하기</a>
+                            <a href="registerform.php" class="sub-list">등록하기</a>
                         </li>
                         <li>
                             <a href="./club_status.html" class="sub-list">신청하기</a>
@@ -118,12 +118,14 @@
             <div class="form__message form__message--error"></div>
             <div class="form__input-group">
                 <input type="text" name= "memberID" class="form__input" autofocus placeholder="학번을 입력해주세요"
-                style="border-radius: 5px 5px 5px 5px; box-shadow: 3px 3px 10px rgba(170, 170, 170, 0.6);">
+                style="border-radius: 5px 5px 5px 5px; box-shadow: 3px 3px 10px rgba(170, 170, 170, 0.6);"
+                onkeypress="JavaScript:press(this.form)">
                 <div class="form__input-error-message"></div>
             </div>
             <div class="form__input-group">
                 <input type="password" name="memberPW" class="form__input" autofocus placeholder="비밀번호를 입력해주세요"
-                style="border-radius: 5px 5px 5px 5px; box-shadow: 3px 3px 10px rgba(170, 170, 170, 0.6);">
+                style="border-radius: 5px 5px 5px 5px; box-shadow: 3px 3px 10px rgba(170, 170, 170, 0.6);"
+                onkeypress="JavaScript:press(this.form)">
                 <div class="form__input-error-message"></div>
             </div>
             <button class="form__button" type="submit"
@@ -138,5 +140,11 @@
             
         </form>
     </div>
+    <script> function press(f){
+        if(f.keyCode == 13){
+            formname.submit();
+        }
+    }
+    </script>
 
 </body>
