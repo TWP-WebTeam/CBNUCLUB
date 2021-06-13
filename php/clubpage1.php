@@ -184,7 +184,7 @@ include "../include/dbConnect.php";
               <hr>
 
             <div id="content">
-            <h3>CUVIC</h3> <div><img src="../img/heart0.png" id="heart1" class="heart" onclick ="changeheart('heart2')" ></div>
+            <h3>CUVIC</h3> <div><img src="../img/heart0.png" id="heart2" class="heart" onclick ="changeheart('heart2')" ></div>
             <div>  <img src="../img/software/img2.jpg" id="img2" alt="club">
                 <div id="pro2" onclick="Change_img(2);">
                     <span id="p">Click하면 동아리 소개를 볼 수 있어요!</span>

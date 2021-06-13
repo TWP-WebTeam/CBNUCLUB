@@ -155,7 +155,7 @@
 			<p class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start">
             <?php echo  $_SESSION['ses_userdpm'] ?></p>
 			<p class="pt-8 text-sm">가입된 동아리</p>
-
+            <?echo $_POST["clubname"];?>
       <?php
       }else{
       ?>
@@ -164,7 +164,6 @@
 			<p class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start">
                 학과 / 학년</p>
 			<p class="pt-8 text-sm">가입된 동아리</p>
-
       <?php
        }
       ?>
