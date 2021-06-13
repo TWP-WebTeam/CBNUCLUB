@@ -247,21 +247,7 @@
              <div style="width:550px; height: 300px;"  id = "chart_div"></div>
             </div>
             </section>
-<<<<<<< HEAD
-            <footer class="container-fluid" style="position: absolute; top: 1500px; background-color: rgba(255, 255, 255, 0.6)">
-=======
-
-
-        <!-- 구글 맵 넣기 !! -->
-
-        <footer class="container-fluid" style="position: absolute; top: 1500px;background-color: rgba(255, 255, 255, 0.6)">
-            <p> --------
-            </p>
-            <!-- <iframe
-            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d800.526906704922!2d127.45694896144974!3d36.62379589381584!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1621859975902!5m2!1sko!2skr"
-            width="200" height="200" style="border:0;" allowfullscreen=""
-            loading="lazy"></iframe> -->
->>>>>>> 12ae157d22263ccce29cbe0e3b5d4e4194a4a154
+            <footer class="container-fluid" style="position: absolute; top: 1500px; background-color: rgba(255, 255, 255, 0.5)">
         </footer>
          </article>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCxi-l8-EWXOu-L6tD9lpDQTdysFKcIJA&callback=myMap"></script>
