@@ -7,8 +7,11 @@
         <link rel="stylesheet" href="../css/home.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
         <title>CBNU CLUB</title>
-        <script src="../js/home.js"></script>
+        <script src="../js/home.js"></script> 
+        <script src="../js/map.js"></script>
+        <script src="../js/chart.js"></script>
         <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
@@ -24,7 +27,7 @@
             <div class="menu-bar">
                 <ul class="main-menu">
                     <li class="sub-menu">
-                        <a href="./club_status.html" style="text-decoration: none; color: black;">
+                        <a href="./clubpage_status.html" style="text-decoration: none; color: black;">
                             동아리 현황</a>
                         <ul class="sub-menu2">
                             <li>
@@ -55,13 +58,13 @@
                     </li>
 
                     <li class="sub-menu">
-                        <a href="" style="text-decoration: none; color: black;">동아리 신청하기</a>
+                        <a href="apply.html" style="text-decoration: none; color: black;">동아리 신청하기</a>
                         <ul class="sub-menu2">
                             <li>
                                 <a href="./register.html" class="sub-list">등록하기</a>
                             </li>
                             <li>
-                                <a href="./club_status.html" class="sub-list">신청하기</a>
+                                <a href="./apply.html" class="sub-list">신청하기</a>
                             </li>
                             <li>
                                 <a href="" class="sub-list">탈퇴 신청하기</a>
@@ -211,16 +214,15 @@
 
         </section>
 
-
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCxi-l8-EWXOu-L6tD9lpDQTdysFKcIJA&callback=myMap"></script>
+        <div  style = "width:100px; height: 100px; position: absolute; left: 700px; margin-top: 10px;">
+        <div id = "chart_div"></div>
+        </div>
         <!-- 구글 맵 넣기 !! -->
 
         <footer class="container-fluid" style="position: absolute; top: 1000px; background-color: rgba(255, 255, 255, 0.6)">
-            <p> --------
-            </p>
-            <!-- <iframe
-            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d800.526906704922!2d127.45694896144974!3d36.62379589381584!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1621859975902!5m2!1sko!2skr"
-            width="200" height="200" style="border:0;" allowfullscreen=""
-            loading="lazy"></iframe> -->
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCxi-l8-EWXOu-L6tD9lpDQTdysFKcIJA&callback=myMap"></script>
+            <div id = "chart_div" style = "width:100px; height: 100px; position: absolute; left: 700px; margin-top: 10px;"></div>
         </footer>
         </article>
     </body>

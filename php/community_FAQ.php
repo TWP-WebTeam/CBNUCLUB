@@ -39,7 +39,7 @@ include "../include/dbConnect.php";
                             동아리 현황</a>
                         <ul class="sub-menu2">
                             <li>
-                                <a href="../html/club_status.html" class="sub-list" style="padding-top: 10px;">중앙동아리</a>
+                                <a href="../html/clubpage_status.html" class="sub-list" style="padding-top: 10px;">중앙동아리</a>
                             </li>
                             <li >
                                 <a href="../html/clubpage1.html" class="sub-list" id="list1"

@@ -150,7 +150,7 @@ a.sub-list:visited{
 .community-list {
     background-color: white;
     width: 160px;
-    height: 300px;
+    height: 240px;
     border-radius: 5px 5px;
     box-shadow: 0 0 10px rgb(133, 133, 133);
 }
@@ -223,101 +223,101 @@ img{
 
 #pro1 {
     position: absolute;
-    top: 127px;
+    top: 168px;
     left: 100px;
     width: 300px;
     height: 300px;
     text-align: center;
     padding-top: 130px;
-    background-color: rgb(130, 130, 130);
+    background-color: white;
     opacity: 0.4;
 }
 #pro2 {
     position: absolute;
-    top: 582px;
+    top: 700px;
     left: 100px;
     width: 300px;
     height: 300px;
     text-align: center;
     padding-top: 130px;
-    background-color: rgb(130, 130, 130);
+    background-color: white;
     opacity: 0.4;
 }
 #pro3 {
     position: absolute;
-    top: 1037px;
+    top: 1235px;
     left: 100px;
     width: 300px;
     height: 300px;
     text-align: center;
     padding-top: 130px;
-    background-color: rgb(130, 130, 130);
+    background-color: white;
     opacity: 0.4;
 }
 #pro4 {
     position: absolute;
-    top: 1492px;
+    top: 1765px;
     left: 100px;
     width: 300px;
     height: 300px;
     text-align: center;
     padding-top: 130px;
-    background-color: rgb(130, 130, 130);
+    background-color: white;
     opacity: 0.4;
 }
 #pro5 {
     position: absolute;
-    top: 1947px;
+    top: 2300px;
     left: 100px;
     width: 300px;
     height: 300px;
     text-align: center;
     padding-top: 130px;
-    background-color: rgb(130, 130, 130);
+    background-color: white;
     opacity: 0.4;
 }
 #pro6 {
     position: absolute;
-    top: 2400px;
+    top: 2832px;
     left: 100px;
     width: 300px;
     height: 300px;
     text-align: center;
     padding-top: 130px;
-    background-color: rgb(130, 130, 130);
+    background-color: white;
     opacity: 0.4;
 }
 #pro7 {
     position: absolute;
-    top: 2855px;
+    top: 3365px;
     left: 100px;
     width: 300px;
     height: 300px;
     text-align: center;
     padding-top: 130px;
-    background-color: rgb(130, 130, 130);
+    background-color: white;
     opacity: 0.4;
 }
 #pro8 {
     position: absolute;
-    top: 3310px;
+    top: 3900px;
     left: 100px;
     width: 300px;
     height: 300px;
     text-align: center;
     padding-top: 130px;
-    background-color: rgb(130, 130, 130);
+    background-color: white;
     opacity: 0.4;
 }
 #pro9 {
     position: absolute;
-    top: 3764px;
+    top: 4432px;
     left: 100px;
     width: 300px;
     height: 300px;
     text-align: center;
     padding-top: 130px;
-    background-color: rgb(130, 130, 130);
+    background-color: white;
     opacity: 0.4;
 }
 
@@ -327,6 +327,10 @@ img{
 
 .promotion{
   visibility: hidden;
+}
+
+#content{
+    height: 500px;
 }
 
 .join{
@@ -358,7 +362,6 @@ img{
   text-align: left;
   padding-right: 30px;    
 }
-
 #dp ul li{
   padding-bottom: 10px;
   text-align: center;
@@ -372,9 +375,15 @@ img{
 }
 
 .divbox{
-    margin : 0px;
+    border : 2px solid black;
+    margin : 20px;
 }
 
+.heart{
+    width: 20px;
+    height: 20px;
+}
+  
 footer{
     position: fixed;
     right: 0px;
