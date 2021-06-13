@@ -386,12 +386,10 @@ body {
 
 #p {
   color: black;
+
 }
 
 .clubimg{
-    top: 2597px;
-    left: 430px;
-    width: 270px;
-    height: 150px;
-
+  width: 270px;
+  height: 150px;
 }

@@ -18,7 +18,7 @@
     <body>
         <div class="header">
             <div class="Logo">
-             <a
+                <a
                     href="../php/home.php"
                     style="text-decoration: none; color: black; position: fixed; padding-left: 20px; padding-top: 15px;">
                     CBNUCLUB</a>
@@ -30,25 +30,25 @@
                             동아리 현황</a>
                         <ul class="sub-menu2">
                             <li>
-                                <a href="./club_stauts.html" class="sub-list" style="padding-top: 10px;">중앙동아리</a>
+                                <a href="../html/clubpage_status.html" class="sub-list" style="padding-top: 10px;">중앙동아리</a>
                             </li>
                             <li >
-                                <a href="./clubpage1.html" class="sub-list" id="list1"
+                                <a href="../html/clubpage1.html" class="sub-list" id="list1"
                                     onmouseover="Change_img();"
                                     onmouseout="Change_text();">전자정보대학</a>
                             </li>
                             <li>
-                                <a href="./clubpage2.html" class="sub-list">공과대학</a>
+                                <a href="../html/clubpage2.html" class="sub-list">공과대학</a>
                             </li>
                             <li>
-                                <a href="./clubpage3.html" class="sub-list">생활과학대학</a>
+                                <a href="../html/clubpage3.html" class="sub-list">생활과학대학</a>
                             </li>
                             <li>
-                                <a href="./clubpage4.html" class="sub-list">수의과대학</a>
+                                <a href="../html/clubpage4.html" class="sub-list">수의과대학</a>
                             </li>
 
                             <li>
-                                <a href="./clubpage5.html" class="sub-list">의과대학</a>
+                                <a href="../html/clubpage5.html" class="sub-list">의과대학</a>
                             </li>
                         </ul>
                     </li>
@@ -57,18 +57,18 @@
                         <a href="" style="text-decoration: none; color: black;">동아리 신청하기</a>
                         <ul class="sub-menu2">
                             <li>
-                                <a href="./register.html" class="sub-list">등록하기</a>
+                                <a href="../html/register.html" class="sub-list">등록하기</a>
                             </li>
                             <li>
-                                <a href="./apply.html" class="sub-list">신청하기</a>
-                            </li>
+                                <a href="../html/apply.html" class="sub-list">신청하기</a>
+                            </li> 
                             <li>
                                 <a href="" class="sub-list">탈퇴 신청하기</a>
                             </li>
                         </ul>
                     </li>
 
-                    <li class="sub-menu">
+                    <li class="sub-menu" style="margin-top: 3px;">
                         <a href="../php/community_NOTI.php" style="text-decoration: none; color: black;">커뮤니티</a>
 
                         <ul class="sub-menu2">
@@ -92,7 +92,7 @@
 
                         <ul class="sub-menu2">
                             <li>
-                                <a href="./profile.html" class="sub-list">나의 프로필</a>
+                                <a href="../php/profile.php" class="sub-list">나의 프로필</a>
                             </li>
                             <li>
                                 <a href="" class="sub-list">신청목록</a>
@@ -110,8 +110,8 @@
                     <span></span>
                 </span>
                 <div class="gnb">
-                    <a href="signin.html" id="signin" onclick="Login()">로그인</a>
-                    <a href="signup.html" id="signup" onclick="Signup()">회원가입</a>
+                    <a href="../php/signin.php" id="signin" onclick="Login()">로그인</a>
+                    <a href="../php/signup.php" id="signup" onclick="Signup()">회원가입</a>
                 </div>
             </div>
         </div>
@@ -119,7 +119,7 @@
         <div class="content">
             <div class="community-list">
                 <ul class="club-list">
-                    <li><a href="./club_status.html" class="list 1">중앙동아리</a></li>
+                    <li><a href="./clubpage_status.html" class="list 1">중앙동아리</a></li>
                     <li><a href="./clubpage1.html" class="list 2">전자정보대학</a></li>
                     <li><a href="./clubpage2.html" class="list 3">공과대학</a></li>
                     <li><a href="./clubpage3.html" class="list 4">생활과학대학</a></li>
@@ -149,6 +149,8 @@
 
             <div class="community-content">
 
+
+               
             <h1 id = "house">주거환경학과</h1>
             <div class="divbox">
             <div id = "content">
@@ -157,19 +159,17 @@
                 <div id="pro1" onclick="Change_img(1);">
                     <span id="p">Click하면 동아리 소개를 볼 수 있어요!</span>
                 </div>
-                </div>
+            </div>
                 <input type="button" class="join" value="가입하기" onClick="submit()"></input>
                 <div class="promotion">
                   <span id="promo1">
-                동아리소개
-                기간 2009. 4 ~ 2010. 12
-
+                동아리소개<br>
                 “한마루”는 뛰어난 인재, 산 정상을 뜻하는 순우리말로 주택분야의 전문가로 거듭나기 위한 발판을 마련하려는 취지로 설립하였다.
                 주택 관련업계의 탐방과 특강을 통해 진로를 모색하고, 졸업 후 다양한 주택관련 업체에 진출해 있는 선배들과의 만남을 통해 수업만으로는 접하기 어려운 생생한 현장을 체험하며, 회원들 간의 다양한 정보교류, 모의면접 스터디를 통해 취업에 대비한 역량을 키우며, 상호협조와 선의의 경쟁을 유도하는데 목적이 있다.
             </span>
             <br>
             </div>
-            </div>
+        </div>
             <hr>
 
             <div id ="content">
@@ -183,7 +183,6 @@
           <div class="promotion">
             <span id="promo2">
                 동아리소개<br>
-
 대학캠퍼스는 국내 에너지 소비량 상위권 건물로써 그린캠퍼스화는 지속가능한 사회를 위한 중요한 단계에 있다. 충북대학교가 충청북도를 대표하는 국립대학교인 만큼 그린캠퍼스로서의 환경 및 사회적 책임을 가져야 하나, 현재의 충북대학교는 그린캠퍼스를 위한 활동이 제대로 갖추어지지 않고 있는 실정이다.
 이에 우리는 충북대학교 그린캠퍼스의 스타터가 되고자 동아리명을 "그린스타터(Green-Starter)"라 하고 충북대학교의 그린캠퍼스화를 위해 다양한 활동을 하며 노력하고 있다.
   </span> <br>

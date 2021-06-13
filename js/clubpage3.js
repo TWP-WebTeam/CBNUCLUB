@@ -30,7 +30,7 @@ function Change_img(num){
         content2.innerHTML = content;
         content2.style.width = "500px";
         content2.style.opacity = "1";
-        content3.style.height = "300px";
+        content2.style.height = "200px";
         content2.style.paddingTop = "0px";
     }
     else {
@@ -52,7 +52,7 @@ function Change_img(num){
         img1.setAttribute("width", "270");
         img1.setAttribute("height", "150");
         content2.style.opacity = "0.4";
-        content3.style.height = "300px";
+        content2.style.height = "150px";
         content2.style.paddingTop = "70px";
       }
     }

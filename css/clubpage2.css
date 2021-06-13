@@ -273,6 +273,11 @@ body {
       margin : 20px;
   }
 
+  .clubimg{
+      width: 270px;
+    height: 150px;
+  }
+
   .heart{
     width: 20px;
 }
