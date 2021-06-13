@@ -33,7 +33,7 @@ body {
     padding-top: 8px;
 }
 
-#signin, #signup,  #signout t {
+#signin, #signup,  #signout {
     text-decoration: none;
     color: black;
     padding-left: 15px;
