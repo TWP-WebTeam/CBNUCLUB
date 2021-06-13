@@ -248,7 +248,7 @@
 
         <!-- 구글 맵 넣기 !! -->
 
-        <footer class="container-fluid" style="position: static; margin-top: 50px;background-color: rgba(255, 255, 255, 0.6)">
+        <footer class="container-fluid" style="position: absolute; top: 1500px;background-color: rgba(255, 255, 255, 0.6)">
             <p> --------
             </p>
             <!-- <iframe
