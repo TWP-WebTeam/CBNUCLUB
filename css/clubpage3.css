@@ -35,7 +35,7 @@ body {
       padding-top: 8px;
   }
   
-  #signin, #signup {
+  #signin, #signup, #signout {
       text-decoration: none;
       color: black;
       padding-left: 2px;
@@ -386,12 +386,10 @@ body {
 
 #p {
   color: black;
+
 }
 
 .clubimg{
-    top: 2597px;
-    left: 430px;
-    width: 270px;
-    height: 150px;
-
+  width: 270px;
+  height: 150px;
 }

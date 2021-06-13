@@ -60,10 +60,8 @@ function Change_img(num){
 }
 
 function submit(){
-
-      alert("가입 페이지로 넘어갑니다.");    
-      document.location.href="main.html";
-     }
+  document.location.href="./apply.html";
+}
 
 function changeheart(n)
     {

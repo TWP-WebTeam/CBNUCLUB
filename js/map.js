@@ -21,7 +21,7 @@ function myMap() {
 
   var mapOptions = {
      center: engine,
-      zoom:16
+    zoom:16
   };
 
   var map = new google.maps.Map(mapCanvas, mapOptions);
