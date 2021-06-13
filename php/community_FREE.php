@@ -69,7 +69,7 @@ include "../include/dbConnect.php";
                             </li>
                             <li>
                                 <a href="../php/apply.php" class="sub-list">신청하기</a>
-                            </li> 
+                            </li>
                             <li>
                                 <a href="" class="sub-list">탈퇴 신청하기</a>
                             </li>
@@ -228,7 +228,7 @@ include "../include/dbConnect.php";
           </div>
 
           <div class="search">
-            <button id="go_write" onmouseover="OnMouseIn_button(this)" onmouseout="OnMouseOut_button(this)" type="button" name="button"><a href="">작성하기</a></button> <br><br>
+            <button id="go_write" onmouseover="OnMouseIn_button(this)" onmouseout="OnMouseOut_button(this)" type="button" name="button"><a href="community_FREE_write.php">작성하기</a></button> <br><br>
            <input style="height:35px; width:280px;  border : 1px solid rgb(206, 206, 206); border-radius: 5px 5px 5px 5px;" type="text" name="">
            <span onmouseover="OnMouseIn_button(this)" onmouseout="OnMouseOut_button(this)" style="background-color:black; color:white; padding:10px; border-radius: 5px 5px 5px 5px;" class="glyphicon glyphicon-search"></span>
           </div>
