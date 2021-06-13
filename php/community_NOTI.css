@@ -108,12 +108,12 @@ a.sub-list:visited{
     color: black;
 }
 
-.noti_go > a:link{
+.text>a:link{
     text-decoration: none;
     color: black;
 }
 
-.noti_go > a:hover{
+.text>a:hover{
     text-decoration:underline;
     color: black;
 }
