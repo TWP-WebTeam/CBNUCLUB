@@ -156,9 +156,44 @@ body {
     padding-top: 100px;
     padding-left: 30px;
 
-}
-
-.community-list {
+  }
+  
+  .community-list {
+      background-color: white;
+      width: 160px;
+      height: 240px;
+      border-radius: 5px 5px;
+      box-shadow: 0 0 10px rgb(133, 133, 133);
+      float:left;
+  }
+  
+  .club-list{
+      list-style: none;
+      margin-left: 8px;
+      padding-top: 18px;
+      list-style-image: url('../img/icon.png');
+      font-size: 17px;
+  }
+  
+  .list {
+      text-decoration: none;
+      color: black;
+  }
+  
+  .list:hover {
+      transform: translateX(-150%);
+      /* font-size: 20px; */
+      color: black;
+  }
+  
+  .club-list li {
+      padding-bottom: 6px;
+  
+  }
+  
+  
+  .community-content{
+    margin-left: 300px;
     background-color: white;
     width: 160px;
     height: 240px;

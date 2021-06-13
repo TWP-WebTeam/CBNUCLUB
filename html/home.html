@@ -1,3 +1,9 @@
+<?php
+ include "../include/session.php";
+ include "../include/dbConnect.php";
+ include "./include/session.php";
+
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -5,66 +11,76 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/home.css">
+        <!-- <link rel="stylesheet" href="../css/chart.css"> -->
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
         <title>CBNU CLUB</title>
-        <script src="../js/home.js"></script> 
         <script src="../js/map.js"></script>
         <script src="../js/chart.js"></script>
+        <script src="../js/home.js"></script>
         <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
+
+        <script language = "javascript">
+            temp = location.href.split("?");
+            data = temp[1].split(":");
+            clubname = data[0];
+            clubgroup = data[1];
+            console.log(clubname);
+            document.getElementById('clubname').innerHTML = clubname;
+            document.getElementById('clubgroup').innerHTML = clubgroup;
+            document.getElementById('clubname').innerHTML = clubname;
+        </script>
     </head>
     <body>
-        <div class="header">
+    <div class="header">
             <div class="Logo">
-                <a href="../php/home.php"
-                    style="text-decoration: none; font-size: 20px; color: black; position: fixed; left: 13.2%; padding-top: 10px;">
+                <a
+                    href="../php/home.php"
+                    style="text-decoration: none; color: black; position: fixed; padding-left: 20px; padding-top: 15px;">
                     CBNUCLUB</a>
             </div>
             <div class="menu-bar">
                 <ul class="main-menu">
                     <li class="sub-menu">
-                        <a href="./clubpage_status.html" style="text-decoration: none; color: black;">
+                        <a href="" style="text-decoration: none; color: black;">
                             동아리 현황</a>
                         <ul class="sub-menu2">
                             <li>
-                                <a href="" class="sub-list" style="padding-top: 10px;">중앙동아리</a>
+                                <a href="../php/clubpage_status.php" class="sub-list" style="padding-top: 10px;">중앙동아리</a>
                             </li>
                             <li >
-                                <a href="" class="sub-list">전자정보대학</a>
+                                <a href="../php/clubpage1.php" class="sub-list" id="list1"
+                                    onmouseover="Change_img();"
+                                    onmouseout="Change_text();">전자정보대학</a>
                             </li>
                             <li>
-                                <a href="" class="sub-list">공과대학</a>
+                                <a href="../php/clubpage2.php" class="sub-list">공과대학</a>
                             </li>
                             <li>
-                                <a href="" class="sub-list">생활과학대학</a>
+                                <a href="../php/clubpage3.php" class="sub-list">생활과학대학</a>
                             </li>
                             <li>
-                                <a href="" class="sub-list">수의과대학</a>
+                                <a href="../php/clubpage4.php" class="sub-list">수의과대학</a>
                             </li>
+
                             <li>
-                                <a href="" class="sub-list">약학대학</a>
-                            </li>
-                            <li>
-                                <a href="" class="sub-list">의과대학</a>
-                            </li>
-                            <li>
-                                <a href="" class="sub-list">사범대학</a>
+                                <a href="../php/clubpage5.php" class="sub-list">의과대학</a>
                             </li>
                         </ul>
                     </li>
 
                     <li class="sub-menu">
-                        <a href="apply.html" style="text-decoration: none; color: black;">동아리 신청하기</a>
+                        <a href="" style="text-decoration: none; color: black;">동아리 신청하기</a>
                         <ul class="sub-menu2">
                             <li>
-                                <a href="./register.html" class="sub-list">등록하기</a>
+                                <a href="../php/registerform1.php" class="sub-list">등록하기</a>
                             </li>
                             <li>
-                                <a href="./apply.html" class="sub-list">신청하기</a>
+                                <a href="../php/apply.php" class="sub-list">신청하기</a>
                             </li>
                             <li>
                                 <a href="" class="sub-list">탈퇴 신청하기</a>
@@ -72,7 +88,7 @@
                         </ul>
                     </li>
 
-                    <li class="sub-menu">
+                    <li class="sub-menu" style="margin-top: 3px;">
                         <a href="../php/community_NOTI.php" style="text-decoration: none; color: black;">커뮤니티</a>
 
                         <ul class="sub-menu2">
@@ -96,7 +112,7 @@
 
                         <ul class="sub-menu2">
                             <li>
-                                <a href="./profile.html" class="sub-list">나의 프로필</a>
+                                <a href="../php/profile.php" class="sub-list">나의 프로필</a>
                             </li>
                             <li>
                                 <a href="" class="sub-list">신청목록</a>
@@ -114,8 +130,9 @@
                     <span></span>
                 </span>
                 <div class="gnb">
-                    <a href="signin.html" id="signin" onclick="Login()">로그인</a>
-                    <a href="signup.html" id="signup" onclick="Signup()">회원가입</a>
+                <a href="signin.php" id="signin" onclick="Login()">로그인</a>
+                <a href="signup.php" id="signup" onclick="Signup()">회원가입</a>
+                <a href="logout.php" id="signout">로그아웃</a>
                 </div>
             </div>
         </div>
@@ -160,29 +177,29 @@
                     </thead>
                     <tbody>
                         <tr style="height: 48px;">
-                            <td><a href="" class="table-content"><div class="article-title">Nest.net</div></a></td>
-                            <td><a href="" class="table-content"><div class="department">소프트웨어학과</div></a></td>
-                            <td><a href="" class="table-content"><div class="due-date">2021.06.30</div></a></td>
+                            <td><a href="../php/clubpage1.php" class="table-content"><div class="article-title" id="clubname">Nest.net</div></a></td>
+                            <td><a href="../php/clubpage1.php" class="table-content"><div class="department" id="clubgroup">소프트웨어학과</div></a></td>
+                            <td><a href="../php/clubpage1.php" class="table-content"><div class="due-date" id="deadline">2021.06.30</div></a></td>
                         </tr>
                         <tr style="height: 48px;">
-                            <td><a href="" class="table-content"><div class="article-title">PDA</div></a></td>
-                            <td><a href="" class="table-content"><div class="department">소프트웨어학과</div></a></td>
-                            <td><a href="" class="table-content"><div class="due-date">2021.07.02</div></a></td>
+                            <td><a href="../php/clubpage1.php" class="table-content"><div class="article-title">페가수스</div></a></td>
+                            <td><a href="../php/clubpage1.php" class="table-content"><div class="department">중앙동아리</div></a></td>
+                            <td><a href="../php/clubpage1.php" class="table-content"><div class="due-date">2021.07.02</div></a></td>
                         </tr>
                         <tr style="height: 48px;">
-                            <td><a href="" class="table-content"><div class="article-title">Emsys</div></a></td>
-                            <td><a href="" class="table-content"><div class="department">소프트웨어학과</div></a></td>
-                            <td><a href="" class="table-content"><div class="due-date">2021.08.29</div></a></td>
+                            <td><a href="../php/clubpage2.php" class="table-content"><div class="article-title">UFC</div></a></td>
+                            <td><a href="../php/clubpage2.php" class="table-content"><div class="department">도시공학과</div></a></td>
+                            <td><a href="../php/clubpage2.php" class="table-content"><div class="due-date">2021.08.29</div></a></td>
                         </tr>
                         <tr style="height: 48px;">
-                            <td><a href="" class="table-content"><div class="article-title">CGAC</div></a></td>
-                            <td><a href="" class="table-content"><div class="department">소프트웨어학과</div></a></td>
-                            <td><a href="" class="table-content"><div class="due-date">2021.06.16</div></a></td>
+                            <td><a href="../php/clubpage4.php" class="table-content"><div class="article-title">돋움</div></a></td>
+                            <td><a href="../php/clubpage4.php" class="table-content"><div class="department">의과대학</div></a></td>
+                            <td><a href="../php/clubpage4.php" class="table-content"><div class="due-date">2021.06.16</div></a></td>
                         </tr>
                         <tr style="height: 48px;"s>
-                            <td><a href="" class="table-content"><div class="article-title">샘마루</div></a></td>
-                            <td><a href="" class="table-content"><div class="department">소프트웨어학과</div></a></td>
-                            <td><a href="" class="table-content"><div class="due-date">2021.09.02</div></a></td>
+                            <td><a href="../php/clubpage1.php" class="table-content"><div class="article-title">샘마루</div></a></td>
+                            <td><a href="../php/clubpage1.php" class="table-content"><div class="department">소프트웨어학과</div></a></td>
+                            <td><a href="../php/clubpage1.php" class="table-content"><div class="due-date">2021.09.02</div></a></td>
                         </tr>
                     </tbody>
                 </table>
@@ -192,11 +209,11 @@
                 <h5 style="padding: 7px; padding-bottom: 0px;">📌공지사항</h5>
                 <hr style="position: relative; width: 350px; left: 2px; margin: 1%;">
                 <ul class="list-group">
-                    <li><a href="" class="list-group-item"><div class="article-title">제목</div><div class="created_at">게시날짜</div></a></li>
-                    <li><a href="" class="list-group-item"><div class="article-title">제목</div><div class="created_at">게시날짜</div></a></li>
-                    <li><a href="" class="list-group-item"><div class="article-title">제목</div><div class="created_at">게시날짜</div></a></li>
-                    <li><a href="" class="list-group-item"><div class="article-title">제목</div><div class="created_at">게시날짜</div></a></li>
-                    <li><a href="" class="list-group-item"><div class="article-title">제목</div><div class="created_at">게시날짜</div></a></li>
+                    <li><a href="../php/community_NOTI.php" class="list-group-item"><div class="article-title">책만세(책으로 만드는 세상) 비대면 독서동아리 모집</div><div class="created_at">2021.06.07</div></a></li>
+                    <li><a href="../php/community_NOTI.php" class="list-group-item"><div class="article-title">[충북대학교 창업지원단]2021년 창업동아리 모집공고</div><div class="created_at">2021.05.18</div></a></li>
+                    <li><a href="../php/community_NOTI.php" class="list-group-item"><div class="article-title">충북대학교 비교과통합관리시스템 CIEAT 안내</div><div class="created_at">2021.04.27</div></a></li>
+                    <li><a href="../php/community_NOTI.php" class="list-group-item"><div class="article-title">2021학년도 1학기 중앙동아리 모집 안내</div><div class="created_at">2021.03.22</div></a></li>
+                    <li><a href="../php/community_NOTI.php" class="list-group-item"><div class="article-title">2021 학생재능기부 봉사활동 동아리 모집</div><div class="created_at">2021.03.16</div></a></li>
                 </ul>
             </div>
             <div class=""
@@ -204,14 +221,14 @@
                 <h5 style="padding: 7px; padding-bottom: 0px;">📌자유게시판</h5>
                 <hr style="position: relative; width: 350px; left: 2px; margin: 1%;">
                 <ul class="list-group">
-                    <li><a href="" class="list-group-item"><div class="article-title">제목</div><div class="created_at">게시날짜</div></a></li>
-                    <li><a href="" class="list-group-item"><div class="article-title">제목</div><div class="created_at">게시날짜</div></a></li>
-                    <li><a href="" class="list-group-item"><div class="article-title">제목</div><div class="created_at">게시날짜</div></a></li>
-                    <li><a href="" class="list-group-item"><div class="article-title">제목</div><div class="created_at">게시날짜</div></a></li>
-                    <li><a href="" class="list-group-item"><div class="article-title">제목</div><div class="created_at">게시날짜</div></a></li>
+                    <li><a href="../php/community_FREE.php" class="list-group-item"><div class="article-title">동아리 추천해주실분!</div><div class="created_at">2021.06.13</div></a></li>
+                    <li><a href="../php/community_FREE.php" class="list-group-item"><div class="article-title">학교주변 맛집 찾음</div><div class="created_at">2021.06.12</div></a></li>
+                    <li><a href="../php/community_FREE.php" class="list-group-item"><div class="article-title">오늘 솔못 산책하다가 지갑주웠어요!</div><div class="created_at">2021.06.10</div></a></li>
+                    <li><a href="../php/community_FREE.php" class="list-group-item"><div class="article-title">연탄봉사 동아리 질문이요!</div><div class="created_at">2021.06.08</div></a></li>
+                    <li><a href="../php/community_FREE.php" class="list-group-item"><div class="article-title">영어동아리!</div><div class="created_at">2021.06.01</div></a></li>
                 </ul>
-            </div>
-        <div  style="border: 1px solid black; background-color: white; position: absolute; float: left; margin-top: 10px;">
+            </div>          
+            <div  style="border: 1px solid black; background-color: white; position: absolute; float: left; margin-top: 10px;">
             <p style=" padding-left: 10px;font-size: 20px; padding-top:10px;">찾아오는 길</p>
             <div style="width:550px; height: 300px;"  id="map" ></div>
             </div>
@@ -222,7 +239,7 @@
             </div>
             </section>
             <footer class="container-fluid" style="position: absolute; top: 1500px; background-color: rgba(255, 255, 255, 0.5)">
-        </footer>
+            </footer>
          </article>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCxi-l8-EWXOu-L6tD9lpDQTdysFKcIJA&callback=myMap"></script>
     </body>
