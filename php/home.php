@@ -48,7 +48,7 @@
                             동아리 현황</a>
                         <ul class="sub-menu2">
                             <li>
-                                <a href="../html/club_status.html" class="sub-list" style="padding-top: 10px;">중앙동아리</a>
+                                <a href="../html/clubpage_status.html" class="sub-list" style="padding-top: 10px;">중앙동아리</a>
                             </li>
                             <li >
                                 <a href="../html/clubpage1.html" class="sub-list">전자정보대학</a>
@@ -238,7 +238,7 @@
             <div  style=" position: absolute; left: 0px; margin-top: 10px;">
             <div style="width:500px; height: 300px;"  id="map" ></div>
             </div>
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCxi-l8-EWXOu-L6tD9lpDQTdysFKcIJA&callback=myMap"></script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCxi-l8-EWXOu-L6tD9lpDQTdysFKcIJA&callback=myMap"></script>
                 <div  style = "width:100px; height: 100px; position: absolute; left: 700px; margin-top: 10px;">
                 <div id = "chart_div"></div>
                 </div>

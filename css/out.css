@@ -142,59 +142,22 @@ a.sub-list:visited{
 }
 
 section {
-    position: relative;
-    top: 100px;
-    z-index: 5;
+    position: absolute;
+    top: 80px;
+    left: 480px;
+    right: 200px;
+    z-index: 1;
 }
 
-.carousel{
-    position: relative;
-    top: 56px;
-    text-align: center;
-    margin-left: 8%;
-    margin-right: 8%;
+form {
+    width: 550px;
+    height: 550px;
+    padding-left: 140px;
+    padding-top: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgb(138, 138, 138);
 }
 
-.carousel-control-prev {
-    position: relative;
-    left: 5px !important;
-}
-
-.carousel-control-next{
-    position: relative;
-    right: 5px !important;
-}
-
-.table-content {
-    color: rgba(0, 0, 0, 0.762);
-    text-decoration: none;
-}
-
-.table-content:hover {
-    color: black;
-    text-decoration: none;
-}
-
-.list-group{
-    list-style: none;
-    border: 0;
-    border-bottom: 1px dotted #dee2e6;
-}
-
-.list-group-item{
-    text-decoration: none;
-    color: black;
-}
-
-.list-group-item:link{
-    border: 0;
-    border-bottom: 1px solid;
-}
-
-.list-group-item:visited {
-    color: black;
-}
-
-.created_at {
-    font-size: 11px;
+.form{
+    height: 200px;
 }
