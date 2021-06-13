@@ -1,15 +1,31 @@
+<?php
+include "../include/session.php";
+include "../include/dbConnect.php";
+
+?>
 <!DOCTYPE html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <title>Login / Sign Up Form</title>
-    <link rel="shortcut icon" href="/assets/favicon.ico">
-    <link rel=stylesheet href='../css/form.css' type='text/css'>
-    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
-    <script src="../js/mySignupForm.js"></script>
-</head>
-<body>
-<div class="header">
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="../css/community_FREE_write.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+      <title>CBNU CLUB</title>
+      <script src="../js/home.js"></script>
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+  <div class="header">
             <div class="Logo">
                 <a
                     href="../php/home.php"
@@ -54,7 +70,7 @@
                             </li>
                             <li>
                                 <a href="../php/apply.php" class="sub-list">신청하기</a>
-                            </li> 
+                            </li>
                             <li>
                                 <a href="" class="sub-list">탈퇴 신청하기</a>
                             </li>
@@ -118,50 +134,53 @@
                 </div>
             </div>
         </div>
-        <div id="signup-form">
-  <!--membersave.php 파일로 회원정보저장-->
-    <div class="container">
-        <form action="membersave.php" method="post" onsubmit="return checkSubmit()" class="form form-signup" id="createAccount">
-        
-        <h1 class="form__title" style="text-shadow: 2px 3px 5px rgba(126, 126, 126, 0.6);">
-                회원가입</h1>
-            <div class="form__message form__message--error"></div>
-            <div class="form__input-group">
-                <input type="text" id="signupUsername" class="form__input" name = "memberID" autofocus placeholder="학번"
-                style="border-radius: 5px 5px 5px 5px; box-shadow: 3px 3px 10px rgba(170, 170, 170, 0.6);">
-                <div class="form__input-error-message"></div>
-            </div>
-            <div class="form__input-group">
-                <input type="password" class="form__input" name="memberPW" autofocus placeholder="비밀번호"
-                style="border-radius: 5px 5px 5px 5px; box-shadow: 3px 3px 10px rgba(170, 170, 170, 0.6);">
-                <div class="form__input-error-message"></div>
-            </div>
-            <div class="form__input-group">
-                <input type="text" class="form__input" name="memberdpm" autofocus placeholder="학과"
-                style="border-radius: 5px 5px 5px 5px; box-shadow: 3px 3px 10px rgba(170, 170, 170, 0.6);">
-                <div class="form__input-error-message"></div>
-            </div>
-            <div class="form__input-group">
-                <input type="text" class="form__input" name="memberEmail" autofocus placeholder="이메일"
-                style="border-radius: 5px 5px 5px 5px; box-shadow: 3px 3px 10px rgba(170, 170, 170, 0.6);">
-                <div class="form__input-error-message"></div>
-            </div>
-            <div class="form__input-group" style="text-align: left;">
-                <label>가입유형</label>
-                <select name="memberWho">
-                    <option>-----</option>
 
-                    <option value ="동아리멤버">동아리 멤버</option>
-                    <option value ="동아리회장">동아리 회장</option>
-                  </select>
-            </div>
-            <button class="form__button" id="signup-button" type="submit"
-            style="border-radius: 5px 5px 5px 5px; box-shadow: 3px 3px 10px rgba(0, 131, 238, 0.6);">
-            가입하기</button>
-            <p class="form__text">
-                <a class="form__link" href="./signin.php">이미 계정이 있습니까? 로그인하기</a>
-            </p>
-        </form>
+
+
+    <div class="second">
+      <div class="top">
+        <span class="glyphicon glyphicon-home"></span>
+        <span class="glyphicon glyphicon-play"></span>
+        <label>커뮤니티</label>
+        <span class="glyphicon glyphicon-play"></span>
+        <label style="">자유게시판</label><br>
+
+        <p style="font-size:30px;">작성하기</p>
+      </div>
+
+      <div class="middle">
+        <div class="subtitle">
+          <form class="write" method="post">
+            <label> 제목</label>
+            <input type="text" id = "w_title"name="w_title"> <br>
+
+            <label> 작성자</label>
+            <input type="text" id = "name" name="name"> <br>
+
+            <label> 내용</label>
+            <input type="text" id = "content" name="content"> <br>
+
+            <a href="community_FREE.php" id = "write">제출</a>
+          </form>
+        </div>
+
+      </div>
+
+
     </div>
 
-</body>
+
+        <section id="article">
+
+        </section>
+
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d800.526906704922!2d127.45694896144974!3d36.62379589381584!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1621859975902!5m2!1sko!2skr" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+      <footer class="container-fluid" style="position: static; margin-top: 50px;background-color: rgba(255, 255, 255, 0.6)">
+            <p> --------</p>
+            <!-- <iframe
+            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d800.526906704922!2d127.45694896144974!3d36.62379589381584!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1621859975902!5m2!1sko!2skr"
+            width="200" height="200" style="border:0;" allowfullscreen=""
+            loading="lazy"></iframe> -->
+        </footer>
+    </body>
+</html>

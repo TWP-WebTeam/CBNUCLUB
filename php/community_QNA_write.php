@@ -150,7 +150,7 @@ include "../include/dbConnect.php";
 
       <div class="middle">
         <div class="subtitle">
-          <form class="write" action="../php/QNA_write.php" method="post">
+          <form class="write"  method="post">
             <label> 제목</label>
             <input type="text" id = "w_title"name="w_title"> <br>
 
@@ -160,7 +160,7 @@ include "../include/dbConnect.php";
             <label> 내용</label>
             <input type="text" id = "content" name="content"> <br>
 
-            <input id="write" type="submit">
+            <a href="community_QNA.php" id = "write">제출</a>
           </form>
         </div>
 
