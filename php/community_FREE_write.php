@@ -9,7 +9,7 @@ include "../include/dbConnect.php";
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="community_QNA_write.css">
+      <link rel="stylesheet" href="../css/community_FREE_write.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
       <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -143,14 +143,14 @@ include "../include/dbConnect.php";
         <span class="glyphicon glyphicon-play"></span>
         <label>커뮤니티</label>
         <span class="glyphicon glyphicon-play"></span>
-        <label style="">QnA</label><br>
+        <label style="">자유게시판</label><br>
 
         <p style="font-size:30px;">작성하기</p>
       </div>
 
       <div class="middle">
         <div class="subtitle">
-          <form class="write"  method="post">
+          <form class="write" method="post">
             <label> 제목</label>
             <input type="text" id = "w_title"name="w_title"> <br>
 
@@ -160,7 +160,7 @@ include "../include/dbConnect.php";
             <label> 내용</label>
             <input type="text" id = "content" name="content"> <br>
 
-            <a href="community_QNA.php" id = "write">제출</a>
+            <a href="community_FREE.php" id = "write">제출</a>
           </form>
         </div>
 
