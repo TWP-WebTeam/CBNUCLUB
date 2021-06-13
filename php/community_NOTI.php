@@ -38,25 +38,25 @@ include "../include/dbConnect.php";
                             동아리 현황</a>
                         <ul class="sub-menu2">
                             <li>
-                                <a href="../html/clubpage_status.html" class="sub-list" style="padding-top: 10px;">중앙동아리</a>
+                                <a href="../php/clubpage_status.php" class="sub-list" style="padding-top: 10px;">중앙동아리</a>
                             </li>
                             <li >
-                                <a href="../html/clubpage1.html" class="sub-list" id="list1"
+                                <a href="../php/clubpage1.php" class="sub-list" id="list1"
                                     onmouseover="Change_img();"
                                     onmouseout="Change_text();">전자정보대학</a>
                             </li>
                             <li>
-                                <a href="../html/clubpage2.html" class="sub-list">공과대학</a>
+                                <a href="../php/clubpage2.php" class="sub-list">공과대학</a>
                             </li>
                             <li>
-                                <a href="../html/clubpage3.html" class="sub-list">생활과학대학</a>
+                                <a href="../php/clubpage3.php" class="sub-list">생활과학대학</a>
                             </li>
                             <li>
-                                <a href="../html/clubpage4.html" class="sub-list">수의과대학</a>
+                                <a href="../php/clubpage4.php" class="sub-list">수의과대학</a>
                             </li>
 
                             <li>
-                                <a href="../html/clubpage5.html" class="sub-list">의과대학</a>
+                                <a href="../php/clubpage5.php" class="sub-list">의과대학</a>
                             </li>
                         </ul>
                     </li>
@@ -65,11 +65,16 @@ include "../include/dbConnect.php";
                         <a href="" style="text-decoration: none; color: black;">동아리 신청하기</a>
                         <ul class="sub-menu2">
                             <li>
-                                <a href="../html/register.html" class="sub-list">등록하기</a>
+                                <a href="../php/registerform1.php" class="sub-list">등록하기</a>
                             </li>
                             <li>
+<<<<<<< HEAD
                                 <a href="../html/apply.html" class="sub-list">신청하기</a>
                             </li>
+=======
+                                <a href="../php/apply.php" class="sub-list">신청하기</a>
+                            </li> 
+>>>>>>> 9e69004bbe7e592f7663ffa6da6b12b51a3180a1
                             <li>
                                 <a href="" class="sub-list">탈퇴 신청하기</a>
                             </li>

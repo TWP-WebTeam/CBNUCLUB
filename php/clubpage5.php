@@ -1,3 +1,10 @@
+
+<?php
+include "../include/session.php";
+include "../include/dbConnect.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -16,121 +23,131 @@
         crossorigin="anonymous"></script>
     </head>
     <body>
-      <div class="header">
-        <div class="Logo">
-            <a
-                href="../php/home.php"
-                style="text-decoration: none; color: black; position: fixed; padding-left: 20px; padding-top: 15px;">
-                CBNUCLUB</a>
-        </div>
-        <div class="menu-bar">
-            <ul class="main-menu">
-                <li class="sub-menu">
-                    <a href="" style="text-decoration: none; color: black;">
-                        동아리 현황</a>
-                    <ul class="sub-menu2">
-                        <li>
-                            <a href="../html/clubpage_status.html" class="sub-list" style="padding-top: 10px;">중앙동아리</a>
-                        </li>
-                        <li >
-                            <a href="../html/clubpage1.html" class="sub-list" id="list1"
-                                onmouseover="Change_img();"
-                                onmouseout="Change_text();">전자정보대학</a>
-                        </li>
-                        <li>
-                            <a href="../html/clubpage2.html" class="sub-list">공과대학</a>
-                        </li>
-                        <li>
-                            <a href="../html/clubpage3.html" class="sub-list">생활과학대학</a>
-                        </li>
-                        <li>
-                            <a href="../html/clubpage4.html" class="sub-list">수의과대학</a>
-                        </li>
+     <div class="header">
+            <div class="Logo">
+                <a
+                    href="../php/home.php"
+                    style="text-decoration: none; color: black; position: fixed; padding-left: 20px; padding-top: 15px;">
+                    CBNUCLUB</a>
+            </div>
+            <div class="menu-bar">
+                <ul class="main-menu">
+                    <li class="sub-menu">
+                        <a href="" style="text-decoration: none; color: black;">
+                            동아리 현황</a>
+                        <ul class="sub-menu2">
+                            <li>
+                                <a href="../php/clubpage_status.php" class="sub-list" style="padding-top: 10px;">중앙동아리</a>
+                            </li>
+                            <li >
+                                <a href="../php/clubpage1.php" class="sub-list" id="list1"
+                                    onmouseover="Change_img();"
+                                    onmouseout="Change_text();">전자정보대학</a>
+                            </li>
+                            <li>
+                                <a href="../php/clubpage2.php" class="sub-list">공과대학</a>
+                            </li>
+                            <li>
+                                <a href="../php/clubpage3.php" class="sub-list">생활과학대학</a>
+                            </li>
+                            <li>
+                                <a href="../php/clubpage4.php" class="sub-list">수의과대학</a>
+                            </li>
 
-                        <li>
-                            <a href="../html/clubpage5.html" class="sub-list">의과대학</a>
-                        </li>
-                    </ul>
-                </li>
+                            <li>
+                                <a href="../php/clubpage5.php" class="sub-list">의과대학</a>
+                            </li>
+                        </ul>
+                    </li>
 
-                <li class="sub-menu">
-                    <a href="" style="text-decoration: none; color: black;">동아리 신청하기</a>
-                    <ul class="sub-menu2">
-                        <li>
-                            <a href="../html/register.html" class="sub-list">등록하기</a>
-                        </li>
-                        <li>
-                            <a href="../html/apply.html" class="sub-list">신청하기</a>
-                        </li> 
-                        <li>
-                            <a href="" class="sub-list">탈퇴 신청하기</a>
-                        </li>
-                    </ul>
-                </li>
+                    <li class="sub-menu">
+                        <a href="" style="text-decoration: none; color: black;">동아리 신청하기</a>
+                        <ul class="sub-menu2">
+                            <li>
+                                <a href="../php/registerform1.php" class="sub-list">등록하기</a>
+                            </li>
+                            <li>
+                                <a href="../php/apply.php" class="sub-list">신청하기</a>
+                            </li> 
+                            <li>
+                                <a href="" class="sub-list">탈퇴 신청하기</a>
+                            </li>
+                        </ul>
+                    </li>
 
-                <li class="sub-menu" style="margin-top: 3px;">
-                    <a href="../php/community_NOTI.php" style="text-decoration: none; color: black;">커뮤니티</a>
+                    <li class="sub-menu" style="margin-top: 3px;">
+                        <a href="../php/community_NOTI.php" style="text-decoration: none; color: black;">커뮤니티</a>
 
-                    <ul class="sub-menu2">
-                        <li>
-                            <a href="../php/community_NOTI.php" class="sub-list">공지사항</a>
-                        </li>
-                        <li>
-                            <a href="../php/community_FREE.php" class="sub-list">자유게시판</a>
-                        </li>
-                        <li>
-                            <a href="../php/community_QNA.php" class="sub-list">QnA</a>
-                        </li>
-                        <li>
-                            <a href="../php/community_FAQ.php" class="sub-list">FAQ</a>
-                        </li>
-                    </ul>
-                </li>
+                        <ul class="sub-menu2">
+                            <li>
+                                <a href="../php/community_NOTI.php" class="sub-list">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="../php/community_FREE.php" class="sub-list">자유게시판</a>
+                            </li>
+                            <li>
+                                <a href="../php/community_QNA.php" class="sub-list">QnA</a>
+                            </li>
+                            <li>
+                                <a href="../php/community_FAQ.php" class="sub-list">FAQ</a>
+                            </li>
+                        </ul>
+                    </li>
 
-                <li class="sub-menu">
-                    <a href="" style="text-decoration: none; color: black;">마이 페이지</a>
+                    <li class="sub-menu">
+                        <a href="" style="text-decoration: none; color: black;">마이 페이지</a>
 
-                    <ul class="sub-menu2">
-                        <li>
-                            <a href="../php/profile.php" class="sub-list">나의 프로필</a>
-                        </li>
-                        <li>
-                            <a href="" class="sub-list">신청목록</a>
-                        </li>
-                        <li>
-                            <a href="" class="sub-list">현재 가입된 동아리</a>
-                        </li>
-                    </ul>
-                </li>
-                <div id="indicator"></div>
-            </ul>
-            <span class="menu-toggle-btn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </span>
-            <div class="gnb">
-                <a href="../php/signin.php" id="signin" onclick="Login()">로그인</a>
-                <a href="../php/signup.php" id="signup" onclick="Signup()">회원가입</a>
+                        <ul class="sub-menu2">
+                            <li>
+                                <a href="../php/profile.php" class="sub-list">나의 프로필</a>
+                            </li>
+                            <li>
+                                <a href="" class="sub-list">신청목록</a>
+                            </li>
+                            <li>
+                                <a href="" class="sub-list">현재 가입된 동아리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <div id="indicator"></div>
+                </ul>
+                <span class="menu-toggle-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <div class="gnb">
+                <?php
+                     if(empty($_SESSION['ses_userid'])){
+                    ?>
+                <a href="signin.php" id="signin" onclick="Login()">로그인</a>
+                <a href="signup.php" id="signup" onclick="Signup()">회원가입</a>
+                <?php
+                }else{
+                ?>
+                <a href="logout.php" id="signout">로그아웃</a>
+                <?php
+                 }
+                ?>
+                </div>
             </div>
         </div>
-    </div>
 
+        
         <div class="content">
             <div class="community-list">
                 <ul class="club-list">
-                    <li><a href="./clubpage_status.html" class="list 1">중앙동아리</a></li>
-                    <li><a href="./clubpage1.html" class="list 2">전자정보대학</a></li>
-                    <li><a href="./clubpage2.html" class="list 3">공과대학</a></li>
-                    <li><a href="./clubpage3.html" class="list 4">생활과학대학</a></li>
-                    <li><a href="./clubpage4.html" class="list 5">수의과대학</a></li>
-                    <li><a href="./clubpage5.html" class="list 7">의과대학</a></li>
+                <li><a href="../php/clubpage_status.php" class="list 1">중앙동아리</a></li>
+                    <li><a href="../php/clubpage1.php" class="list 2">전자정보대학</a></li>
+                    <li><a href="../php/clubpage2.php" class="list 3">공과대학</a></li>
+                    <li><a href="../php/clubpage3.php" class="list 4">생활과학대학</a></li>
+                    <li><a href="../php/clubpage4.php" class="list 5">수의과대학</a></li>
+                    <li><a href="../php/clubpage5.php" class="list 7">의과대학</a></li>
                 </ul>
             </div>
             <div id="dp">
-                <ul>
-                    <li><a href="#med" class="list 1">의학과</a></li>
-                    <li><a href="#nur" class="list 1">간호학과</a></li>
+                <ul class="club-list">
+                    <li><a href="#vete" class="list 1">수의학과</a></li>
                 </ul>
             </div>
 
@@ -145,6 +162,7 @@
                     <hr>
                 </ul>
             </div>
+
 
             <div class="community-content">
             <h1 id = "med">의학과</h1>
