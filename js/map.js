@@ -21,7 +21,7 @@ function myMap() {
   var elect = new google.maps.LatLng(36.62558742476862, 127.45437425131267);
 
   var mapOptions = {
-    
+     center: engine,
       zoom:16
   };
 

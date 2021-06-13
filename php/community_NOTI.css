@@ -108,15 +108,6 @@ a.sub-list:visited{
     color: black;
 }
 
-.text>a:link{
-    text-decoration: none;
-    color: black;
-}
-
-.text>a:hover{
-    text-decoration:underline;
-    color: black;
-}
 #indicator {
     position: fixed;
     left: 29.2%;
@@ -206,9 +197,18 @@ a.sub-list:visited{
 
 }
 
-
 .text{
   font-size: 15px;
   margin-left: 45px;
   margin-top: 0px;
+}
+
+.noti_go:link{
+    text-decoration: none;
+    color: black;
+}
+
+.noti_go:hover{
+    text-decoration:underline;
+    color: black;
 }
