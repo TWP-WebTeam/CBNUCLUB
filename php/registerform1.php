@@ -3,29 +3,25 @@ include "../include/session.php";
 include "../include/dbConnect.php";
 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="community_QNA_write.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-      <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
-      <title>CBNU CLUB</title>
-      <script src="../js/home.js"></script>
-      <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-      crossorigin="anonymous"></script>
-  </head>
-  <body>
-  <div class="header">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/register.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+        <title>CBNU CLUB</title>
+        <!-- <script src="../js/profile.js"></script>  -->
+        <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <div class="header">
             <div class="Logo">
                 <a
                     href="../php/home.php"
@@ -134,53 +130,74 @@ include "../include/dbConnect.php";
                 </div>
             </div>
         </div>
-
-
-
-    <div class="second">
-      <div class="top">
-        <span class="glyphicon glyphicon-home"></span>
-        <span class="glyphicon glyphicon-play"></span>
-        <label>커뮤니티</label>
-        <span class="glyphicon glyphicon-play"></span>
-        <label style="">QnA</label><br>
-
-        <p style="font-size:30px;">작성하기</p>
-      </div>
-
-      <div class="middle">
-        <div class="subtitle">
-          <form class="write" action="../php/QNA_write.php" method="post">
-            <label> 제목</label>
-            <input type="text" id = "w_title"name="w_title"> <br>
-
-            <label> 작성자</label>
-            <input type="text" id = "name" name="name"> <br>
-
-            <label> 내용</label>
-            <input type="text" id = "content" name="content"> <br>
-
-            <input id="write" type="submit">
-          </form>
-        </div>
-
-      </div>
-
-
-    </div>
-
-
         <section id="article">
+            <div class="form">
+                <form class="form-horizontal" action="../register.php" method="POST">
+                    <h4 class="bold title" style="padding-left: 57px;">📌동아리 등록하기</h4>
+                    <div class="form-group">
+                      <label class="control-label col-sm-4">동아리명 :</label>
+                      <div class="col-sm-8">
+                        <input type="text" class="form-control" id="cname" name="clubname">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-4">동아리 대표자명 :</label>
+                      <div class="col-sm-8">
+                        <input type="text" class="form-control" name="author">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                        <label>동아리 회원 수 :</label>
+                            <select name="total_member">
+                                <option>-----</option>
+                                <option value="1~20명">1~20명</option>
+                                <option value="21~50명">21~50명</option>
+                                <option value="51~100명">51~100명</option>
+                            </select><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="">동아리 소개 :</label><br>
+                        <div class="col-sm-8">
+                            <textarea name="" id="" cols="35" rows="10" style="resize: none;"></textarea><br>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="">동아리방 위치 :</label>
+                        <div class="col-sm-8">
+                            <input type="text" placeholder="ex) S4-1 / 106호"><br>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-sm-offset-2 col-sm-10"><br>
+                        <input type="submit" name="" id="" value="등록하기"
+                        style="background-color: rgb(131, 201, 252); border-radius: 5px 5px;"
+                        onclick="push_list();">
+                      </div>
+                    </div>
+                  </form>
+            </div>
+
 
         </section>
 
-        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d800.526906704922!2d127.45694896144974!3d36.62379589381584!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1621859975902!5m2!1sko!2skr" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
-        <footer class="container-fluid" style="position: absolute; top: 1000px; background-color: rgba(255, 255, 255, 0.6)">
-            <p> --------</p>
-            <!-- <iframe
-            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d800.526906704922!2d127.45694896144974!3d36.62379589381584!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1621859975902!5m2!1sko!2skr"
-            width="200" height="200" style="border:0;" allowfullscreen=""
-            loading="lazy"></iframe> -->
-        </footer>
+        <footer class="container-fluid"></footer>
+        <script language = "javascript">
+            var list = ['0'];
+            var i = 1;
+            var ele;
+
+            function insert_list(){
+                ele =document.getElementById("cname").value;
+                console.log(ele);
+            }
+
+            function push_list(){
+                // list.push(ele);
+                // i++;
+                // console.log(list);
+                // window.location.href = "profile.html?"+list+":"+ele;
+            }
+
+        </script>
     </body>
 </html>
