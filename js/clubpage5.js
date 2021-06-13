@@ -66,7 +66,7 @@ function Change_img(num){
 function submit(){
 
       alert("가입 페이지로 넘어갑니다.");    
-      document.location.href="../html/apply.html";
+      document.location.href="../php/apply.php";
      }
 
 function changeheart(n)

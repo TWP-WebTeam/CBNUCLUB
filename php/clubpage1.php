@@ -135,12 +135,12 @@ include "../include/dbConnect.php";
         <div class="content">
             <div class="community-list">
                 <ul class="club-list">
-                    <li><a href="./clubpage_status.html" class="list 1">중앙동아리</a></li>
-                    <li><a href="./clubpage1.html" class="list 2">전자정보대학</a></li>
-                    <li><a href="./clubpage2.html" class="list 3">공과대학</a></li>
-                    <li><a href="./clubpage3.html" class="list 4">생활과학대학</a></li>
-                    <li><a href="./clubpage4.html" class="list 5">수의과대학</a></li>
-                    <li><a href="./clubpage5.html" class="list 7">의과대학</a></li>
+                <li><a href="../php/clubpage_status.php" class="list 1">중앙동아리</a></li>
+                    <li><a href="../php/clubpage1.php" class="list 2">전자정보대학</a></li>
+                    <li><a href="../php/clubpage2.php" class="list 3">공과대학</a></li>
+                    <li><a href="../php/clubpage3.php" class="list 4">생활과학대학</a></li>
+                    <li><a href="../php/clubpage4.php" class="list 5">수의과대학</a></li>
+                    <li><a href="../php/clubpage5.php" class="list 7">의과대학</a></li>
                 </ul>
             </div>
             <div id="dp">
@@ -184,7 +184,7 @@ include "../include/dbConnect.php";
               <hr>
 
             <div id="content">
-            <h3>CUVIC</h3> <div><img src="../img/heart0.png" id="heart1" class="heart" onclick ="changeheart('heart2')" ></div>
+            <h3>CUVIC</h3> <div><img src="../img/heart0.png" id="heart2" class="heart" onclick ="changeheart('heart2')" ></div>
             <div>  <img src="../img/software/img2.jpg" id="img2" alt="club">
                 <div id="pro2" onclick="Change_img(2);">
                     <span id="p">Click하면 동아리 소개를 볼 수 있어요!</span>

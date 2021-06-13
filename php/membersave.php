@@ -5,7 +5,7 @@
 
 $host = 'localhost';
     $user = 'root';
-    $passWord = 'qwer1234!';
+    $passWord = 'rhrnak12!';
     $dbName = 'clubdb';
 
 $mysqli = new mysqli($host, $user, $pw, $dbName);

@@ -11,7 +11,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/home.css">
-        <link rel="stylesheet" href="../css/chart.css">
+        <!-- <link rel="stylesheet" href="../css/chart.css"> -->
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
         <title>CBNU CLUB</title>
@@ -235,21 +236,17 @@
                     <li><a href="" class="list-group-item"><div class="article-title">제목</div><div class="created_at">게시날짜</div></a></li>
                     <li><a href="" class="list-group-item"><div class="article-title">제목</div><div class="created_at">게시날짜</div></a></li>
                 </ul>
+            </div>          
+            <div  style="border: 1px solid black; background-color: white; position: absolute; float: left; margin-top: 10px;">
+            <p style=" padding-left: 10px;font-size: 20px; padding-top:10px;">찾아오는 길</p>
+            <div style="width:550px; height: 300px;"  id="map" ></div>
+            </div>
+
+            <div  style = "border: 1px solid black;  background-color: white; margin-left: 575px; position: absolute;  margin-top: 10px; ">
+            <p style=" padding-left: 10px;font-size: 20px; margin-left: 50px; padding-top:10px;">기타 사항</p>
+             <div style="width:550px; height: 300px;"  id = "chart_div"></div>
             </div>
         </section>
-
-        <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCxi-l8-EWXOu-L6tD9lpDQTdysFKcIJA&callback=myMap"></script>
-            <div style="width:500px; height: 300px;"  id="map"><script>myMap();</script></div>
-            <div style="width:500px; height: 300px;" id = "chart_div"><script>drawChart();</script></div> -->
-
-
-        <!-- 구글 맵 넣기 !! -->
-
-        <footer class="container-fluid" style="position: absolute; top: 1500px;background-color: rgba(255, 255, 255, 0.6)">
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCxi-l8-EWXOu-L6tD9lpDQTdysFKcIJA&callback=myMap"></script>
-            <div style="width:500px; height: 300px;"  id="map"><script>myMap();</script></div>
-            <div style="width:500px; height: 300px;" id = "chart_div"><script>drawChart();</script></div>
-        </footer>
-        </article>
+         </article>
     </body>
 </html>

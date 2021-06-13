@@ -69,7 +69,7 @@ include "../include/dbConnect.php";
                             </li>
                             <li>
                                 <a href="../php/apply.php" class="sub-list">신청하기</a>
-                            </li> 
+                            </li>
                             <li>
                                 <a href="" class="sub-list">탈퇴 신청하기</a>
                             </li>
@@ -133,7 +133,7 @@ include "../include/dbConnect.php";
                 </div>
             </div>
         </div>
-        
+
         <div class="second">
           <div class="top">
             <span class="glyphicon glyphicon-home"></span>
@@ -213,7 +213,7 @@ include "../include/dbConnect.php";
 
         </section>
 
-            <footer class="container-fluid" style="position: absolute; top: 1000px; background-color: rgba(255, 255, 255, 0.6)">
+            <footer class="container-fluid" style="position: static; margin-top: 50px;background-color: rgba(255, 255, 255, 0.6)">
             <p> --------
             </p>
             <!-- <iframe

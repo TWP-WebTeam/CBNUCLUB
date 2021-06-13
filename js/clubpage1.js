@@ -60,7 +60,7 @@ function Change_img(num){
 }
 
 function submit(){
-  document.location.href="./apply.html";
+  document.location.href="./apply.php";
 }
 
 function changeheart(n)

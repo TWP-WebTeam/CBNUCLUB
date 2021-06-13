@@ -108,6 +108,15 @@ a.sub-list:visited{
     color: black;
 }
 
+.text>a:link{
+    text-decoration: none;
+    color: black;
+}
+
+.text>a:hover{
+    text-decoration:underline;
+    color: black;
+}
 #indicator {
     position: fixed;
     left: 29.2%;
