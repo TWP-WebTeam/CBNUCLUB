@@ -19,7 +19,7 @@
             <div class="menu-bar">
                 <ul class="main-menu">
                     <li class="sub-menu">
-                        <a href="" style="text-decoration: none; color: black;">
+                        <a href="../php/clubpage_status.php" style="text-decoration: none; color: black;">
                             동아리 현황</a>
                         <ul class="sub-menu2">
                             <li>

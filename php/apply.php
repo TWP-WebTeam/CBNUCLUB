@@ -2,7 +2,12 @@
 include "../include/session.php";
 include "../include/dbConnect.php";
 
-?>
+
+if(empty($_SESSION['ses_userid'])){
+            echo ("<script>alert('로그인이 필요합니다.');
+                    location.replace('../php/signin.php');</script>");
+    }else{?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -31,7 +36,7 @@ include "../include/dbConnect.php";
             <div class="menu-bar">
                 <ul class="main-menu">
                     <li class="sub-menu">
-                        <a href="" style="text-decoration: none; color: black;">
+                        <a href="../php/clubpage_status.php" style="text-decoration: none; color: black;">
                             동아리 현황</a>
                         <ul class="sub-menu2">
                             <li>
@@ -94,6 +99,18 @@ include "../include/dbConnect.php";
 
                     <li class="sub-menu">
                         <a href="../php/profile.php" style="text-decoration: none; color: black;">마이 페이지</a>
+
+                        <ul class="sub-menu2">
+                            <li>
+                                <a href="" class="sub-list"></a>
+                            </li>
+                            <li>
+                                <a href="" class="sub-list"></a>
+                            </li>
+                            <li>
+                                <a href="" class="sub-list"></a>
+                            </li>
+                        </ul>
                     </li>
                     <div id="indicator"></div>
                 </ul>
@@ -176,3 +193,4 @@ include "../include/dbConnect.php";
         </script>
     </body>
 </html>
+<?php } ?>

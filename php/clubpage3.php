@@ -32,7 +32,7 @@ include "../include/dbConnect.php";
             <div class="menu-bar">
                 <ul class="main-menu">
                     <li class="sub-menu">
-                        <a href="" style="text-decoration: none; color: black;">
+                        <a href="../php/clubpage_status.php" style="text-decoration: none; color: black;">
                             동아리 현황</a>
                         <ul class="sub-menu2">
                             <li>
@@ -95,6 +95,18 @@ include "../include/dbConnect.php";
 
                     <li class="sub-menu">
                         <a href="../php/profile.php" style="text-decoration: none; color: black;">마이 페이지</a>
+
+                        <ul class="sub-menu2">
+                            <li>
+                                <a href="" class="sub-list"></a>
+                            </li>
+                            <li>
+                                <a href="" class="sub-list"></a>
+                            </li>
+                            <li>
+                                <a href="" class="sub-list"></a>
+                            </li>
+                        </ul>
                     </li>
                     <div id="indicator"></div>
                 </ul>
@@ -119,7 +131,6 @@ include "../include/dbConnect.php";
                 </div>
             </div>
         </div>
-
 
         <div class="content">
             <div class="community-list">
@@ -153,8 +164,6 @@ include "../include/dbConnect.php";
             </div>
 
             <div class="community-content">
-
-
                
             <h1 id = "house">주거환경학과</h1>
             <div class="divbox">
