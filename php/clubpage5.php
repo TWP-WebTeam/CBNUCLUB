@@ -147,7 +147,8 @@ include "../include/dbConnect.php";
             </div>
             <div id="dp">
                 <ul class="club-list">
-                    <li><a href="#vete" class="list 1">수의학과</a></li>
+                    <li><a href="#vete" class="list 1">의학과</a></li>
+                    <li><a href="#vete" class="list 1">간호학과</a></li>
                 </ul>
             </div>
 

@@ -56,7 +56,7 @@
                                 <a href="../php/apply.php" class="sub-list">신청하기</a>
                             </li> 
                             <li>
-                                <a href="" class="sub-list">탈퇴 신청하기</a>
+                                <a href="../php/out.php" class="sub-list">탈퇴 신청하기</a>
                             </li>
                         </ul>
                     </li>
@@ -81,19 +81,7 @@
                     </li>
 
                     <li class="sub-menu">
-                        <a href="" style="text-decoration: none; color: black;">마이 페이지</a>
-
-                        <ul class="sub-menu2">
-                            <li>
-                                <a href="../php/profile.php" class="sub-list">나의 프로필</a>
-                            </li>
-                            <li>
-                                <a href="" class="sub-list">신청목록</a>
-                            </li>
-                            <li>
-                                <a href="" class="sub-list">현재 가입된 동아리</a>
-                            </li>
-                        </ul>
+                        <a href="../php/profile.php" style="text-decoration: none; color: black;">마이 페이지</a>
                     </li>
                     <div id="indicator"></div>
                 </ul>
@@ -118,6 +106,7 @@
                 </div>
             </div>
         </div>
+
     <!-- onsubmit="return checkSubmit()" -->
     <div id="login-form" style="text-align: center;">
         <form action="login.php" method="post" class="form form-login" id="login">
