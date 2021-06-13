@@ -247,7 +247,7 @@
              <div style="width:550px; height: 300px;"  id = "chart_div"></div>
             </div>
             </section>
-            <footer class="container-fluid" style="position: absolute; top: 1500px; background-color: rgba(255, 255, 255, 0.5)">
+            <footer class="container-fluid" style="position: absolute; top: 1500px; background-color: rgba(255, 255, 255, 0.6)">
         </footer>
          </article>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCxi-l8-EWXOu-L6tD9lpDQTdysFKcIJA&callback=myMap"></script>
