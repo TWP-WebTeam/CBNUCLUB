@@ -2,7 +2,11 @@
 include "../include/session.php";
 include "../include/dbConnect.php";
 
-?>
+
+ if(empty($_SESSION['ses_userid'])){
+            echo ("<script>alert('로그인이 필요합니다.');
+                    location.replace('../php/signin.php');</script>");
+    }else{?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -31,7 +35,7 @@ include "../include/dbConnect.php";
             <div class="menu-bar">
                 <ul class="main-menu">
                     <li class="sub-menu">
-                        <a href="" style="text-decoration: none; color: black;">
+                        <a href="../php/clubpage_status.php" style="text-decoration: none; color: black;">
                             동아리 현황</a>
                         <ul class="sub-menu2">
                             <li>
@@ -68,7 +72,7 @@ include "../include/dbConnect.php";
                                 <a href="../php/apply.php" class="sub-list">신청하기</a>
                             </li> 
                             <li>
-                                <a href="" class="sub-list">탈퇴 신청하기</a>
+                                <a href="../php/out.php" class="sub-list">탈퇴 신청하기</a>
                             </li>
                         </ul>
                     </li>
@@ -93,17 +97,17 @@ include "../include/dbConnect.php";
                     </li>
 
                     <li class="sub-menu">
-                        <a href="" style="text-decoration: none; color: black;">마이 페이지</a>
+                        <a href="../php/profile.php" style="text-decoration: none; color: black;">마이 페이지</a>
 
                         <ul class="sub-menu2">
                             <li>
-                                <a href="../php/profile.php" class="sub-list">나의 프로필</a>
+                                <a href="" class="sub-list"></a>
                             </li>
                             <li>
-                                <a href="" class="sub-list">신청목록</a>
+                                <a href="" class="sub-list"></a>
                             </li>
                             <li>
-                                <a href="" class="sub-list">현재 가입된 동아리</a>
+                                <a href="" class="sub-list"></a>
                             </li>
                         </ul>
                     </li>
@@ -115,13 +119,22 @@ include "../include/dbConnect.php";
                     <span></span>
                 </span>
                 <div class="gnb">
-
-                <a href="logout.php" id="signout"
-                style="text-decoration: none; color: black; padding-left: 15px; font-size: 15px;">로그아웃</a>
-
+                <?php
+                     if(empty($_SESSION['ses_userid'])){
+                    ?>
+                <a href="signin.php" id="signin" onclick="Login()">로그인</a>
+                <a href="signup.php" id="signup" onclick="Signup()">회원가입</a>
+                <?php
+                }else{
+                ?>
+                <a href="logout.php" id="signout">로그아웃</a>
+                <?php
+                 }
+                ?>
                 </div>
             </div>
         </div>
+
         <section id="article">
             <div class="form">
                 <form class="form-horizontal" action="../register.php" method="POST">
@@ -193,3 +206,4 @@ include "../include/dbConnect.php";
         </script>
     </body>
 </html>
+<?php } ?>

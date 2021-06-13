@@ -34,7 +34,7 @@ include "../include/dbConnect.php";
             <div class="menu-bar">
                 <ul class="main-menu">
                     <li class="sub-menu">
-                        <a href="" style="text-decoration: none; color: black;">
+                        <a href="../php/clubpage_status.php" style="text-decoration: none; color: black;">
                             동아리 현황</a>
                         <ul class="sub-menu2">
                             <li>
@@ -68,15 +68,10 @@ include "../include/dbConnect.php";
                                 <a href="../php/registerform1.php" class="sub-list">등록하기</a>
                             </li>
                             <li>
-
-                                <a href="../html/apply.html" class="sub-list">신청하기</a>
-                            </li>
-
                                 <a href="../php/apply.php" class="sub-list">신청하기</a>
-                            </li>
-
+                            </li> 
                             <li>
-                                <a href="" class="sub-list">탈퇴 신청하기</a>
+                                <a href="../php/out.php" class="sub-list">탈퇴 신청하기</a>
                             </li>
                         </ul>
                     </li>
@@ -101,19 +96,7 @@ include "../include/dbConnect.php";
                     </li>
 
                     <li class="sub-menu">
-                        <a href="" style="text-decoration: none; color: black;">마이 페이지</a>
-
-                        <ul class="sub-menu2">
-                            <li>
-                                <a href="../php/profile.php" class="sub-list">나의 프로필</a>
-                            </li>
-                            <li>
-                                <a href="" class="sub-list">신청목록</a>
-                            </li>
-                            <li>
-                                <a href="" class="sub-list">현재 가입된 동아리</a>
-                            </li>
-                        </ul>
+                        <a href="../php/profile.php" style="text-decoration: none; color: black;">마이 페이지</a>
                     </li>
                     <div id="indicator"></div>
                 </ul>
@@ -138,6 +121,7 @@ include "../include/dbConnect.php";
                 </div>
             </div>
         </div>
+
         <div class="second">
           <div class="top">
             <span class="glyphicon glyphicon-home"></span>
@@ -158,7 +142,7 @@ include "../include/dbConnect.php";
             <div class="text">
               <div  id="p1_1" style="margin-bottom:20px;">
                 <p onmouseover="OnMouseIn_text(this)" onmouseout="OnMouseOut_text(this)" ><label style="margin-left:80px; margin-right:10px;">1</label>
-                  <a class"noti_go" href="https://www.chungbuk.ac.kr/site/www/boardView.do?post=3195741&page=&boardSeq=112&key=698&searchType=ALL&searchKeyword=%EB%8F%99%EC%95%84%EB%A6%AC"
+                  <a class ="noti_go" href="https://www.chungbuk.ac.kr/site/www/boardView.do?post=3195741&page=&boardSeq=112&key=698&searchType=ALL&searchKeyword=%EB%8F%99%EC%95%84%EB%A6%AC"
                   style="margin-left:50px;">책만세(책으로 만드는 세상) 비대면 독서동아리 모집</a>
                 <label style="margin-right:100px; margin-left:55px;">도서관</label>
                 <label>2021.06.07</label></p>
@@ -167,7 +151,7 @@ include "../include/dbConnect.php";
 
               <div  id="p1_1" style="margin-bottom:20px;">
                 <p onmouseover="OnMouseIn_text(this)" onmouseout="OnMouseOut_text(this)"><label style="margin-left:80px; margin-right:10px;">2</label>
-                  <a class"noti_go" href="https://www.chungbuk.ac.kr/site/www/boardView.do?post=3195322&page=&boardSeq=112&key=698&searchType=ALL&searchKeyword=%EB%8F%99%EC%95%84%EB%A6%AC"
+                  <a class ="noti_go" href="https://www.chungbuk.ac.kr/site/www/boardView.do?post=3195322&page=&boardSeq=112&key=698&searchType=ALL&searchKeyword=%EB%8F%99%EC%95%84%EB%A6%AC"
                    style=" margin-left:50px;">[충북대학교 창업지원단]2021년 창업동아리 모집공고</a>
                 <label style="margin-right:85px; margin-left:35px;">창업지원단</label>
                 <label>2021.05.18</label></p>
@@ -176,7 +160,7 @@ include "../include/dbConnect.php";
 
               <div  id="p1_1" style="margin-bottom:20px;">
                 <p onmouseover="OnMouseIn_text(this)" onmouseout="OnMouseOut_text(this)"><label style="margin-left:80px; margin-right:10px;">3</label>
-                  <a  class"noti_go" href="https://www.chungbuk.ac.kr/site/www/boardView.do?post=3194841&page=&boardSeq=112&key=698&searchType=ALL&searchKeyword=%EB%8F%99%EC%95%84%EB%A6%AC"
+                  <a  class ="noti_go" href="https://www.chungbuk.ac.kr/site/www/boardView.do?post=3194841&page=&boardSeq=112&key=698&searchType=ALL&searchKeyword=%EB%8F%99%EC%95%84%EB%A6%AC"
                   style=" margin-left:50px;">충북대학교 비교과통합관리시스템 CIEAT 안내</a>
                 <label style="margin-right:100px; margin-left:80px;">교무과</label>
                 <label>2021.04.27</label></p>
@@ -185,7 +169,7 @@ include "../include/dbConnect.php";
 
               <div  id="p1_1" style="margin-bottom:20px;">
                 <p onmouseover="OnMouseIn_text(this)" onmouseout="OnMouseOut_text(this)"><label style="margin-left:80px; margin-right:10px;">4</label>
-                  <a class"noti_go" href="https://www.chungbuk.ac.kr/site/www/boardView.do?post=3193884&page=&boardSeq=112&key=698&searchType=ALL&searchKeyword=%EB%8F%99%EC%95%84%EB%A6%AC"
+                  <a class= "noti_go" href="https://www.chungbuk.ac.kr/site/www/boardView.do?post=3193884&page=&boardSeq=112&key=698&searchType=ALL&searchKeyword=%EB%8F%99%EC%95%84%EB%A6%AC"
                   style=" margin-left:50px;">2021학년도 1학기 중앙동아리 모집 안내</a>
                 <label style="margin-right:100px; margin-left:110px;">학생과</label>
                 <label>2021.03.22</label></p>
@@ -194,7 +178,7 @@ include "../include/dbConnect.php";
 
               <div  id="p1_1" style="margin-bottom:20px;">
                 <p onmouseover="OnMouseIn_text(this)" onmouseout="OnMouseOut_text(this)"><label style="margin-left:80px; margin-right:10px;">5</label>
-                  <a class"noti_go" href="https://www.chungbuk.ac.kr/site/www/boardView.do?post=3193697&page=&boardSeq=112&key=698&searchType=ALL&searchKeyword=%EB%8F%99%EC%95%84%EB%A6%AC"
+                  <a class = "noti_go" href="https://www.chungbuk.ac.kr/site/www/boardView.do?post=3193697&page=&boardSeq=112&key=698&searchType=ALL&searchKeyword=%EB%8F%99%EC%95%84%EB%A6%AC"
                   style="margin-left:50px;">2021 학생재능기부 봉사활동 동아리 모집</a>
                 <label style="margin-right:100px; margin-left:105px;">학생과</label>
                 <label>2021.03.16</label></p>
