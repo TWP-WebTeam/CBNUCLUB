@@ -246,7 +246,10 @@
             <p style=" padding-left: 10px;font-size: 20px; margin-left: 50px; padding-top:10px;">기타 사항</p>
              <div style="width:550px; height: 300px;"  id = "chart_div"></div>
             </div>
-        </section>
+            </section>
+            <footer class="container-fluid" style="position: absolute; top: 1500px; background-color: rgba(255, 255, 255, 0.5)">
+        </footer>
          </article>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCxi-l8-EWXOu-L6tD9lpDQTdysFKcIJA&callback=myMap"></script>
     </body>
 </html>

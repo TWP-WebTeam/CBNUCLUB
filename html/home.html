@@ -211,16 +211,19 @@
                     <li><a href="" class="list-group-item"><div class="article-title">제목</div><div class="created_at">게시날짜</div></a></li>
                 </ul>
             </div>
+        <div  style="border: 1px solid black; background-color: white; position: absolute; float: left; margin-top: 10px;">
+            <p style=" padding-left: 10px;font-size: 20px; padding-top:10px;">찾아오는 길</p>
+            <div style="width:550px; height: 300px;"  id="map" ></div>
+            </div>
 
-        </section>
-
-        <!-- 구글 맵 넣기 !! -->
-
-        <footer class="container-fluid" style="position: relative; top: 450px; background-color: rgba(255, 255, 255, 0.6)">
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCxi-l8-EWXOu-L6tD9lpDQTdysFKcIJA&callback=myMap"></script>
-                <div style="position: relative; top: 50px; left: 50px; width:400px; height: 300px;"  id="map"><script>myMap();</script></div>
-                <div style="position: relative; top: 50px; left: 250px; width:400px; height: 300px;" id="chart_div"><script>drawChart();</script></div>
+            <div  style = "border: 1px solid black;  background-color: white; margin-left: 575px; position: absolute;  margin-top: 10px; ">
+            <p style=" padding-left: 10px;font-size: 20px; margin-left: 50px; padding-top:10px;">기타 사항</p>
+             <div style="width:550px; height: 300px;"  id = "chart_div"></div>
+            </div>
+            </section>
+            <footer class="container-fluid" style="position: absolute; top: 1500px; background-color: rgba(255, 255, 255, 0.5)">
         </footer>
-        </article>
+         </article>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCxi-l8-EWXOu-L6tD9lpDQTdysFKcIJA&callback=myMap"></script>
     </body>
 </html>

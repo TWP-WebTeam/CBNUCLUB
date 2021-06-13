@@ -1,10 +1,11 @@
-function pinSymbol() {
+function pinSymbol(color) {
   return {
-      fillColor: '#CE69E7',
+      path: 'M 0,0 C -2,-20 -10,-22 -10,-30 A 10,10 0 1,1 10,-30 C 10,-22 2,-20 0,0 z',
+      fillColor: color,
       fillOpacity: 1,
       strokeColor: '#FFF',
       strokeWeight: 2,
-      scale: 1.2,
+      scale: 1.5,
   };
 }
 
@@ -28,37 +29,37 @@ function myMap() {
 
   var marker = new google.maps.Marker({
     position:engine,
-    icon: pinSymbol()
+    icon: pinSymbol("#33CC00")
   });
   marker.setMap(map);
 
   var marker2 = new google.maps.Marker({
    position:lifescience,
-   icon: pinSymbol()
+   icon: pinSymbol("#33CC00")
   });
   marker2.setMap(map);
 
   var marker3 = new google.maps.Marker({
    position:medicine,
-   icon: pinSymbol()
+   icon: pinSymbol("#33CC00")
   });
   marker3.setMap(map);
 
   var marker4 = new google.maps.Marker({
    position:vete,
-   icon: pinSymbol()
+   icon: pinSymbol("#33CC00")
   });
   marker4.setMap(map);
 
   var marker5 = new google.maps.Marker({
    position:nursing,
-   icon: pinSymbol()
+   icon: pinSymbol("#33CC00")
   });
   marker5.setMap(map);
 
   var marker6 = new google.maps.Marker({
    position:elect,
-   icon: pinSymbol()
+   icon: pinSymbol("#33CC00")
   });
   marker6.setMap(map);
 
@@ -96,13 +97,12 @@ function myMap() {
   var myUniversity = new google.maps.Circle({
     center: engine,
     radius: 100,
-    strokeColor: "#9986EE",
+    strokeColor: "#EE82EE",
     strokeOpacity: 0.8,
     strokeWeight: 3,
-    fillColor: "#9986EE",
+    fillColor: "#EE82EE",
     fillOpacity: 0.4
   });
 myUniversity.setMap(map);
 
 }
-
